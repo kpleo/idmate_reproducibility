@@ -1,0 +1,431 @@
+{
+  "schema_version": "1.0",
+  "title": "IDMate: Finite-temperature response bounds and reference-map fallback for self-consistent-field proposal screening",
+  "data_distribution": "not_distributed",
+  "default_data_root": "data/derived",
+  "default_output_root": "build",
+  "figures": [
+    {
+      "id": "fig1_screen",
+      "label": "fig:screen",
+      "display": "Figure 1",
+      "script": "scripts/generate_figures.py",
+      "outputs": ["fig1_screen.pdf", "fig1_screen.svg"],
+      "inputs": [
+        {
+          "path": "fig1_response_trials.csv",
+          "format": "csv",
+          "columns": [
+            {"name": "scope", "type": "string", "unit": "category"},
+            {"name": "system", "type": "string", "unit": "category"},
+            {"name": "trial_id", "type": "string", "unit": "identifier"},
+            {"name": "temperature_ha", "type": "number", "unit": "Ha"},
+            {"name": "distance_ratio", "type": "number", "unit": "dimensionless"},
+            {"name": "gap_ratio", "type": "number", "unit": "dimensionless"},
+            {"name": "violation", "type": "boolean", "unit": "logical"}
+          ]
+        },
+        {
+          "path": "fig1_shell_weights.csv",
+          "format": "csv",
+          "columns": [
+            {"name": "g2_shell", "type": "number", "unit": "reciprocal-lattice squared"},
+            {"name": "g_norm_bohr_inv", "type": "number", "unit": "bohr^-1"},
+            {"name": "weight", "type": "number", "unit": "fraction"},
+            {"name": "cumulative_weight", "type": "number", "unit": "fraction"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fig2_causal",
+      "label": "fig:causal-decomposition",
+      "display": "Figure 2",
+      "script": "scripts/generate_figures.py",
+      "outputs": ["fig2_causal.pdf", "fig2_causal.svg"],
+      "inputs": [
+        {
+          "path": "fig2_interventions.csv",
+          "format": "csv",
+          "columns": [
+            {"name": "system", "type": "string", "unit": "category"},
+            {"name": "evidence_level", "type": "string", "unit": "category"},
+            {"name": "coupling_fraction", "type": "number", "unit": "fraction of critical coupling"},
+            {"name": "update_error", "type": "number", "unit": "relative norm", "nullable": true},
+            {"name": "intrinsic_margin", "type": "number", "unit": "dimensionless", "nullable": true},
+            {"name": "mixer", "type": "string", "unit": "category", "nullable": true},
+            {"name": "spectral_radius", "type": "number", "unit": "dimensionless", "nullable": true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fig3_worklaw",
+      "label": "fig:complexity-law",
+      "display": "Figure 3",
+      "script": "scripts/generate_figures.py",
+      "outputs": ["fig3_worklaw.pdf", "fig3_worklaw.svg"],
+      "inputs": [
+        {
+          "path": "fig3_worklaw_summary.json",
+          "format": "json",
+          "schema": "schemas/fig3_worklaw_summary.schema.json"
+        },
+        {
+          "path": "fig3_local_scaling.csv",
+          "format": "csv",
+          "columns": [
+            {"name": "iteration", "type": "integer", "unit": "index"},
+            {"name": "adiabaticity_squared", "type": "number", "unit": "dimensionless"},
+            {"name": "projector_distance", "type": "number", "unit": "dimensionless"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fig5_anchor",
+      "label": "fig:physical-validity",
+      "display": "Figure 4",
+      "script": "scripts/generate_figures.py",
+      "outputs": ["fig5_anchor.pdf", "fig5_anchor.svg"],
+      "inputs": [
+        {
+          "path": "fig5_eos.csv",
+          "format": "csv",
+          "columns": [
+            {"name": "method", "type": "string", "unit": "category"},
+            {"name": "volume_a3_per_atom", "type": "number", "unit": "angstrom^3 per atom"},
+            {"name": "energy_ev_per_atom", "type": "number", "unit": "eV per atom"}
+          ]
+        },
+        {
+          "path": "fig5_bands.csv",
+          "format": "csv",
+          "columns": [
+            {"name": "method", "type": "string", "unit": "category"},
+            {"name": "k_distance", "type": "number", "unit": "path coordinate"},
+            {"name": "band_index", "type": "integer", "unit": "index"},
+            {"name": "energy_ev", "type": "number", "unit": "eV relative to reference"},
+            {"name": "k_label", "type": "string", "unit": "label", "nullable": true}
+          ]
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "tab:three-zone-decisions",
+      "display": "Main-text controller decisions and terminal checks",
+      "output": "table_three_zone_decisions.tex",
+      "blocks": [
+        {
+          "input": "tables/main_controller_decisions.csv",
+          "columns": [
+            {"key": "zone", "heading": "Zone", "type": "string"},
+            {"key": "low_cutoff", "heading": "Low cutoff", "type": "string"},
+            {"key": "subspace", "heading": "Subspace", "type": "string"},
+            {"key": "coarse_k", "heading": "Coarse k", "type": "string"},
+            {"key": "screen_bound", "heading": "Screen bound", "type": "number"},
+            {"key": "delta_f_ha", "heading": "Delta F (Ha)", "type": "number"},
+            {"key": "coverage", "heading": "Coverage", "type": "number"},
+            {"key": "outcome", "heading": "Outcome", "type": "string"}
+          ]
+        },
+        {
+          "input": "tables/main_controller_terminal.csv",
+          "columns": [
+            {"key": "observable", "heading": "Terminal observable", "type": "string"},
+            {"key": "observed_deviation", "heading": "Observed deviation", "type": "number"},
+            {"key": "criterion", "heading": "Criterion", "type": "number"},
+            {"key": "observed_over_criterion", "heading": "Observed / criterion", "type": "number"},
+            {"key": "outcome", "heading": "Outcome", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:mixing-baselines",
+      "display": "Main-text mixing comparison",
+      "output": "table_mixing_baselines.tex",
+      "blocks": [
+        {
+          "input": "tables/main_mixing_baselines.csv",
+          "columns": [
+            {"key": "policy", "heading": "Mixing policy", "type": "string"},
+            {"key": "diamond_si", "heading": "Diamond Si", "type": "string"},
+            {"key": "graphene", "heading": "Graphene", "type": "string"},
+            {"key": "fcc_al", "heading": "fcc Al", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:physical-convergence",
+      "display": "Main-text convergence and same-operator comparison",
+      "output": "table_physical_convergence.tex",
+      "blocks": [
+        {
+          "input": "tables/main_physical_convergence.csv",
+          "columns": [
+            {"key": "axis", "heading": "Validation axis", "type": "string"},
+            {"key": "configuration", "heading": "Configuration", "type": "string"},
+            {"key": "measured_difference", "heading": "Measured difference", "type": "number"},
+            {"key": "unit", "heading": "Unit", "type": "string"},
+            {"key": "criterion_or_reference", "heading": "Criterion / reference", "type": "string"},
+            {"key": "status", "heading": "Status", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:mg-factorial-rungs",
+      "display": "SI cutoff-by-grid intervention series",
+      "output": "table_mg_factorial_rungs.tex",
+      "blocks": [
+        {
+          "input": "tables/si_mg_factorial_rungs.csv",
+          "columns": [
+            {"key": "cutoff_ha", "heading": "Cutoff (Ha)", "type": "number"},
+            {"key": "grid", "heading": "Grid", "type": "string"},
+            {"key": "basis", "heading": "Basis", "type": "string"},
+            {"key": "baseline_margin", "heading": "Baseline margin", "type": "number"},
+            {"key": "strong_margin", "heading": "Strong-coupling margin", "type": "number"},
+            {"key": "energy_curvature_error", "heading": "Energy-curvature error", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:k2-nested-rungs",
+      "display": "SI nested-k-mesh intervention series",
+      "output": "table_k2_nested_rungs.tex",
+      "blocks": [
+        {
+          "input": "tables/si_k2_nested_rungs.csv",
+          "columns": [
+            {"key": "mesh", "heading": "Mesh", "type": "string"},
+            {"key": "kpoints", "heading": "k points", "type": "integer"},
+            {"key": "basis", "heading": "Basis", "type": "string"},
+            {"key": "critical_coupling_ha", "heading": "Critical coupling (Ha)", "type": "number"},
+            {"key": "baseline_margin", "heading": "Baseline margin", "type": "number"},
+            {"key": "strong_margin", "heading": "Strong-coupling margin", "type": "number"},
+            {"key": "susceptibility_ratio", "heading": "Susceptibility ratio", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:numerical-parameters",
+      "display": "SI numerical parameters",
+      "output": "table_numerical_parameters.tex",
+      "blocks": [
+        {
+          "input": "tables/si_numerical_parameters.csv",
+          "columns": [
+            {"key": "item", "heading": "Item", "type": "string"},
+            {"key": "value", "heading": "Value", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:hgh",
+      "display": "SI analytic pseudopotential parameters",
+      "output": "table_hgh_parameters.tex",
+      "blocks": [
+        {
+          "input": "tables/si_hgh_parameters.csv",
+          "columns": [
+            {"key": "element", "heading": "Element", "type": "string"},
+            {"key": "channel", "heading": "Channel", "type": "string"},
+            {"key": "radius_bohr", "heading": "Radius (bohr)", "type": "number"},
+            {"key": "coefficients_ha", "heading": "Coefficients (Ha)", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:shell-sequence",
+      "display": "SI reciprocal-shell response weights",
+      "output": "table_shell_sequence.tex",
+      "blocks": [
+        {
+          "input": "fig1_shell_weights.csv",
+          "columns": [
+            {"key": "g2_shell", "heading": "|G|^2 shell", "type": "number"},
+            {"key": "g_norm_bohr_inv", "heading": "|G| (bohr^-1)", "type": "number"},
+            {"key": "weight", "heading": "Weight", "type": "number"},
+            {"key": "cumulative_weight", "heading": "Cumulative weight", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:work-category",
+      "display": "SI category-level work-prediction results",
+      "output": "table_work_category.tex",
+      "blocks": [
+        {
+          "input": "tables/si_work_category.csv",
+          "columns": [
+            {"key": "category", "heading": "Category", "type": "string"},
+            {"key": "prespecified_fit_percent", "heading": "Prespecified fit (%)", "type": "string"},
+            {"key": "corrected_fit_percent", "heading": "Intercept-corrected fit (%)", "type": "string"},
+            {"key": "inclusion_fraction", "heading": "Inclusion", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:h2-mixer-radii",
+      "display": "SI reduced-model mixer radii",
+      "output": "table_h2_mixer_radii.tex",
+      "blocks": [
+        {
+          "input": "tables/si_h2_mixer_radii.csv",
+          "columns": [
+            {"key": "operator", "heading": "Operator", "type": "string"},
+            {"key": "fixed_j", "heading": "Fixed J", "type": "number"},
+            {"key": "fraction_0p1", "heading": "0.1 critical coupling", "type": "number"},
+            {"key": "fraction_0p2", "heading": "0.2 critical coupling", "type": "number"},
+            {"key": "fraction_0p4", "heading": "0.4 critical coupling", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:silicon-fixed-b",
+      "display": "SI silicon fixed-mixer radii",
+      "output": "table_silicon_mixer_radii.tex",
+      "blocks": [
+        {
+          "input": "tables/si_silicon_mixer_radii.csv",
+          "columns": [
+            {"key": "level", "heading": "Level", "type": "string"},
+            {"key": "unit", "heading": "Unit", "type": "number"},
+            {"key": "scalar_0p25", "heading": "Scalar 0.25", "type": "number"},
+            {"key": "scalar_0p70", "heading": "Scalar 0.70", "type": "number"},
+            {"key": "inverse_control", "heading": "Inverse control", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:three-system-controller",
+      "display": "SI three-system controller results",
+      "output": "table_three_system_controller.tex",
+      "blocks": [
+        {
+          "input": "tables/si_three_system_controller.csv",
+          "columns": [
+            {"key": "quantity", "heading": "Quantity", "type": "string"},
+            {"key": "si", "heading": "Si", "type": "string"},
+            {"key": "graphene", "heading": "Graphene", "type": "string"},
+            {"key": "al", "heading": "Al", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:slack-verification",
+      "display": "SI floating-point slack",
+      "output": "table_screen_slack.tex",
+      "blocks": [
+        {
+          "input": "tables/si_screen_slack.csv",
+          "columns": [
+            {"key": "case", "heading": "Case", "type": "string"},
+            {"key": "accepted_rows", "heading": "Accepted rows", "type": "integer"},
+            {"key": "bound_range", "heading": "Bound range", "type": "string"},
+            {"key": "largest_excess", "heading": "Largest excess", "type": "string"},
+            {"key": "trace_deviation_range", "heading": "Trace-deviation range", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:reference-decisions",
+      "display": "SI reference-configuration decisions",
+      "output": "table_reference_decisions.tex",
+      "blocks": [
+        {
+          "input": "tables/si_reference_decisions.csv",
+          "columns": [
+            {"key": "system", "heading": "System", "type": "string"},
+            {"key": "iterations", "heading": "Iterations", "type": "integer"},
+            {"key": "accept", "heading": "Accept", "type": "integer"},
+            {"key": "reject", "heading": "Reject", "type": "integer"},
+            {"key": "abstain", "heading": "Abstain", "type": "integer"},
+            {"key": "skipped", "heading": "Skipped", "type": "integer"},
+            {"key": "max_staleness", "heading": "Max staleness", "type": "integer"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:accepted-reference-rows",
+      "display": "SI accepted reference-configuration proposals",
+      "output": "table_accepted_reference_rows.tex",
+      "blocks": [
+        {
+          "input": "tables/si_accepted_reference_rows.csv",
+          "columns": [
+            {"key": "system", "heading": "System", "type": "string"},
+            {"key": "iteration", "heading": "Iteration", "type": "integer"},
+            {"key": "proposal", "heading": "Proposal", "type": "string"},
+            {"key": "bound", "heading": "Bound", "type": "number"},
+            {"key": "window_distance", "heading": "Window distance", "type": "number"},
+            {"key": "full_distance", "heading": "Full distance", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:production-accepted",
+      "display": "SI accepted production-size proposals",
+      "output": "table_production_accepted.tex",
+      "blocks": [
+        {
+          "input": "tables/si_production_accepted.csv",
+          "columns": [
+            {"key": "iteration", "heading": "Iteration", "type": "integer"},
+            {"key": "proposal", "heading": "Proposal", "type": "string"},
+            {"key": "window_distance", "heading": "Window distance", "type": "number"},
+            {"key": "full_distance", "heading": "Full distance", "type": "number"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:production-cost",
+      "display": "SI production-size timing summary",
+      "output": "table_production_cost.tex",
+      "blocks": [
+        {
+          "input": "tables/si_production_cost.csv",
+          "columns": [
+            {"key": "quantity", "heading": "Quantity", "type": "string"},
+            {"key": "value", "heading": "Value", "type": "string"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tab:mixing-comparison",
+      "display": "SI classical mixing comparison",
+      "output": "table_mixing_comparison.tex",
+      "blocks": [
+        {
+          "input": "tables/si_mixing_comparison.csv",
+          "columns": [
+            {"key": "system", "heading": "System", "type": "string"},
+            {"key": "policy", "heading": "Policy", "type": "string"},
+            {"key": "outcome_or_iterations", "heading": "Outcome / iterations", "type": "string"},
+            {"key": "wall_s", "heading": "Wall (s)", "type": "string"},
+            {"key": "clamps", "heading": "Clamps", "type": "string"}
+          ]
+        }
+      ]
+    }
+  ]
+}

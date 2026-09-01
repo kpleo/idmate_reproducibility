@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "manuscript_title": "IDMate: Finite-temperature response bounds and reference-map fallback for self-consistent-field proposal screening",
+  "figures": [
+    {
+      "manuscript_label": "fig:screen",
+      "display_number": "Figure 1",
+      "artifact_id": "fig1_screen",
+      "script": "scripts/generate_figures.py"
+    },
+    {
+      "manuscript_label": "fig:causal-decomposition",
+      "display_number": "Figure 2",
+      "artifact_id": "fig2_causal",
+      "script": "scripts/generate_figures.py"
+    },
+    {
+      "manuscript_label": "fig:complexity-law",
+      "display_number": "Figure 3",
+      "artifact_id": "fig3_worklaw",
+      "script": "scripts/generate_figures.py"
+    },
+    {
+      "manuscript_label": "fig:physical-validity",
+      "display_number": "Figure 4",
+      "artifact_id": "fig5_anchor",
+      "script": "scripts/generate_figures.py",
+      "note": "The source identifier is retained after two low-data displays were converted to tables."
+    }
+  ],
+  "tables": [
+    "tab:three-zone-decisions",
+    "tab:mixing-baselines",
+    "tab:physical-convergence",
+    "tab:mg-factorial-rungs",
+    "tab:k2-nested-rungs",
+    "tab:numerical-parameters",
+    "tab:hgh",
+    "tab:shell-sequence",
+    "tab:work-category",
+    "tab:h2-mixer-radii",
+    "tab:silicon-fixed-b",
+    "tab:three-system-controller",
+    "tab:slack-verification",
+    "tab:reference-decisions",
+    "tab:accepted-reference-rows",
+    "tab:production-accepted",
+    "tab:production-cost",
+    "tab:mixing-comparison"
+  ]
+}

@@ -1,0 +1,46 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+
+# Numerical inputs are supplied separately and are never committed here.
+data/derived/*
+!data/derived/.gitkeep
+
+# Generated manuscript artifacts are local products.
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/tables/*
+!outputs/tables/.gitkeep
+
+# Common numerical and binary formats that must not enter the public tree.
+*.csv
+*.tsv
+*.jsonl
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.onnx
+*.bin
+*.exe
+*.so
+*.dylib
+*.a
+*.o
+*.out
+*.err
+*.log
+*.pdf
+*.png
+*.svg
+*.tif
+*.tiff
+*.zip
+*.tar
+*.tar.gz
+

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fig3_worklaw_summary.schema.json",
+  "title": "Cross-lineage work-prediction summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["models", "categories", "counts"],
+  "properties": {
+    "models": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "improvement_fraction", "ci_low", "ci_high", "criterion"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "improvement_fraction": {"type": "number"},
+          "ci_low": {"type": "number"},
+          "ci_high": {"type": "number"},
+          "criterion": {"type": "number"}
+        }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "effect_fraction", "status"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "effect_fraction": {"type": ["number", "null"]},
+          "status": {"type": "string", "enum": ["evaluated", "insufficient_data"]}
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trajectories", "converged_trajectories", "paired_steps", "parent_lineages"],
+      "properties": {
+        "trajectories": {"type": "integer", "minimum": 0},
+        "converged_trajectories": {"type": "integer", "minimum": 0},
+        "paired_steps": {"type": "integer", "minimum": 0},
+        "parent_lineages": {"type": "integer", "minimum": 0}
+      }
+    }
+  }
+}
+

@@ -1,0 +1,6 @@
+name: idmate-paper-reproduction
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - matplotlib=3.9.2
