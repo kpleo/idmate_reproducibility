@@ -595,7 +595,7 @@ def render_fig3(inputs: dict[str, Any]) -> Any:
     axes[2].text(
         0.03,
         0.95,
-        f"slope {slope:.6f}\nmean $d_P/A_k$ {mean_ratio:.6f}\n$n={len(x)}$ positive pairs",
+        f"slope {slope:.3f}\nmean $d_P/A_k$ {mean_ratio:.3f}\n$n={len(x)}$ positive pairs",
         transform=axes[2].transAxes,
         va="top",
         fontsize=6.8,

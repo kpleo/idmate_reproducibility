@@ -86,5 +86,8 @@ file corresponds to one block in `manifest.json`:
 | `tab:production-cost` | `tables/si_production_cost.csv` |
 | `tab:mixing-comparison` | `tables/si_mixing_comparison.csv` |
 
-The plotting and table scripts preserve the supplied numerical precision; they
-do not reconstruct missing values or substitute values from manuscript prose.
+The scripts retain full input precision for validation and computation. Plotted
+results are formatted to three decimal places, with scientific notation or a
+fourth decimal used only when required by scale; table values are reproduced as
+supplied. They do not reconstruct missing values or substitute values from
+manuscript prose.
