@@ -458,7 +458,7 @@ def render_fig3(inputs: dict[str, Any]) -> Any:
     _, plt, _ = plotting_modules()
     summary = inputs["fig3_worklaw_summary.json"]
     scaling = inputs["fig3_local_scaling.csv"]
-    fig, axes = plt.subplots(1, 3, figsize=(7.2, 2.6), constrained_layout=True)
+    fig, axes = plt.subplots(1, 3, figsize=(7.2, 3.3), constrained_layout=True)
 
     models = summary["models"]
     y = list(range(len(models)))[::-1]
@@ -550,10 +550,10 @@ def render_fig3(inputs: dict[str, Any]) -> Any:
         axes[1].annotate(
             f"{effect:+.1f}",
             xy=(effect, yi),
-            xytext=(5 if effect <= 35 else -5, 4 if effect < -5 else 0),
+            xytext=(0, 8),
             textcoords="offset points",
-            ha="left" if effect <= 35 else "right",
-            va="center",
+            ha="center",
+            va="bottom",
             fontsize=6.2,
             fontweight="bold",
         )
