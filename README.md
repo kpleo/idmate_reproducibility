@@ -2,15 +2,44 @@
 
 Repository name: `idmate_reproducibility`.
 
-This repository contains the lightweight scripts and metadata needed to
+## Versioned numerical release
+
+The self-contained [2026-09-07 release](releases/2026-09-07/README.md) contains
+compact derived inputs and independent plotting scripts for the current three
+main figures and two supplemental figures, including crystal motifs. It also
+reconstructs the three tables for the silicon, graphene and aluminium
+historical-subspace comparisons. Numerical coordinates and stated table
+quantities can be reconstructed without access to the solver.
+It also includes the numerical clarifications for the historical trace
+comparisons, material-stratified separation, shell profiles and H2 reuse.
+
+```sh
+python3 releases/2026-09-07/build.py
+python3 scripts/verify_repository.py
+```
+
+The release distinguishes reconstruction of displayed data from rerunning
+electronic-structure calculations or the stored hierarchical bootstrap. Its
+README and numerical dictionary specify the remaining gaps. It distributes
+neither the manuscript nor the solver, potential files, wave functions or
+large calculation outputs.
+
+## Historical interface
+
+The remainder of this page documents the earlier four-figure interface,
+retained in the top-level scripts, schemas and display map. Its missing-input
+status and exclusions apply to that earlier interface, not to the derived
+inputs explicitly included in the versioned release above.
+
+The historical interface contains the lightweight scripts and metadata used to
 reconstruct the figures and tables accompanying the manuscript
 "IDMate: Finite-temperature response bounds and reference-map fallback for
-self-consistent-field proposal screening." It does not distribute numerical
-records or an electronic-structure implementation.
+self-consistent-field proposal screening." That interface does not distribute
+its numerical records or an electronic-structure implementation.
 
-## Repository scope
+## Historical interface scope
 
-The repository contains documentation, Python scripts, environment
+The historical interface contains documentation, Python scripts, environment
 descriptions, machine-readable mappings, and empty input/output directory
 placeholders. It excludes:
 
@@ -33,10 +62,10 @@ successful reproduction.
 | Fig. 1 | `scripts/generate_figures.py --only fig1_screen` | `fig1_response_trials.csv`, `fig1_shell_weights.csv` | `fig1_screen.pdf`, `fig1_screen.svg` |
 | Fig. 2 | `scripts/generate_figures.py --only fig2_causal` | `fig2_interventions.csv` | `fig2_causal.pdf`, `fig2_causal.svg` |
 | Fig. 3 | `scripts/generate_figures.py --only fig3_worklaw` | `fig3_worklaw_summary.json`, `fig3_local_scaling.csv` | `fig3_worklaw.pdf`, `fig3_worklaw.svg` |
-| Fig. 4 in the current four-figure layout | `scripts/generate_figures.py --only fig5_anchor` | `fig5_eos.csv`, `fig5_bands.csv` | `fig5_anchor.pdf`, `fig5_anchor.svg` |
+| Fig. 4 in the earlier four-figure layout | `scripts/generate_figures.py --only fig5_anchor` | `fig5_eos.csv`, `fig5_bands.csv` | `fig5_anchor.pdf`, `fig5_anchor.svg` |
 | Main-text and SI tables | `scripts/generate_tables.py` | the 18 table inputs listed in `manifest.json` | one LaTeX fragment per table |
 
-Figure numbering follows the current manuscript filenames: the fourth main
+Historical figure numbering follows the earlier manuscript filenames: the fourth main
 display retains the source identifier `fig5_anchor` because earlier low-data
 displays were converted to tables. `config/display_map.json` provides the
 machine-readable manuscript-label mapping.

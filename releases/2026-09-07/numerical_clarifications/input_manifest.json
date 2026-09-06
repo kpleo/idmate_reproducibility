@@ -1,0 +1,34 @@
+{
+  "historical_candidates.csv": {
+    "sha256": "3fa7b4fa10aa76b62dddeb507117133f09b6bb4ab8667cddae7537eecbb32127",
+    "bytes": 1241
+  },
+  "material_candidates.csv": {
+    "sha256": "ae739a8b82dffb841d2af4f9e7fe1df6935111fbd5985df0d4ce0728087383f7",
+    "bytes": 8286
+  },
+  "excluded_candidates.csv": {
+    "sha256": "8144d6cf294b0a30accc35ab9d92898255056c4aede6fb8c2ecdab2efa092e34",
+    "bytes": 1063
+  },
+  "shell_profiles.csv": {
+    "sha256": "fa796ac089f8853231fcead2f1255292e62f72c3d29901447d70b0c1be764621",
+    "bytes": 13291
+  },
+  "shell_probe_scattering.csv": {
+    "sha256": "bf19f90f20f9f9c8c27312988d8bc6794e77af7945989021e9ba19eae3432bbe",
+    "bytes": 299
+  },
+  "shell_configurations.json": {
+    "sha256": "7c3f347d68d725b3ce1a62a683791d3a54fa3a7a7bddb5ca8c9252d95ab0dd73",
+    "bytes": 1709
+  },
+  "h2_reuse.csv": {
+    "sha256": "e422fcbe51c6d86ef80ee878432fb1c3e1fa70e71b08d24d32848abf0125ec02",
+    "bytes": 12546
+  },
+  "source_coverage.json": {
+    "sha256": "70e551f0cbe9eb097d52476e831e3e21f0564f750b86bb1527f4f2d32e4c0aec",
+    "bytes": 27828
+  }
+}

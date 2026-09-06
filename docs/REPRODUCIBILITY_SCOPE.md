@@ -1,5 +1,10 @@
 # Reproducibility scope
 
+The [2026-09-07 release](../releases/2026-09-07/README.md) includes its own
+numerical inputs, coverage statement and reconstruction commands. The sections
+below describe the earlier top-level interface, whose numerical inputs remain
+separate. They do not limit or extend the versioned release's stated coverage.
+
 ## What this repository can reproduce
 
 When the declared derived numerical inputs are supplied, the repository can:

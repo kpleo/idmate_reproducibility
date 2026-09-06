@@ -1,0 +1,80 @@
+[
+  {
+    "configuration": "exploratory",
+    "material": "Si",
+    "lattice_constant_bohr": 10.26,
+    "cutoff_ha": 6.0,
+    "temperature_ha": 0.02,
+    "k_mesh": [
+      1,
+      1,
+      1
+    ],
+    "density_grid": [
+      13,
+      13,
+      13
+    ],
+    "derivative_columns": 128,
+    "finite_difference_step": 0.002,
+    "total_shells_reported": 99,
+    "printed_shells": 37,
+    "shell_print_threshold": 1e-12,
+    "closure_relative_error_reported": 0.0,
+    "source_id": "shell_exploratory",
+    "source_record_first": 1817,
+    "source_record_last": 1853
+  },
+  {
+    "configuration": "selection",
+    "material": "Si",
+    "lattice_constant_bohr": 10.26,
+    "cutoff_ha": 25.0,
+    "temperature_ha": 0.02,
+    "k_mesh": [
+      4,
+      4,
+      4
+    ],
+    "density_grid": [
+      33,
+      33,
+      33
+    ],
+    "derivative_columns": 136,
+    "finite_difference_step": 0.0005,
+    "total_shells_reported": 715,
+    "printed_shells": 142,
+    "shell_print_threshold": 1e-12,
+    "closure_relative_error_reported": 2.697e-15,
+    "source_id": "shell_selection",
+    "source_record_first": 43,
+    "source_record_last": 184
+  },
+  {
+    "configuration": "frozen",
+    "material": "Si",
+    "lattice_constant_bohr": 10.26,
+    "cutoff_ha": 25.0,
+    "temperature_ha": 0.02,
+    "k_mesh": [
+      4,
+      4,
+      4
+    ],
+    "density_grid": [
+      33,
+      33,
+      33
+    ],
+    "derivative_columns": 168,
+    "finite_difference_step": 0.0005,
+    "total_shells_reported": 715,
+    "printed_shells": 142,
+    "shell_print_threshold": 1e-12,
+    "closure_relative_error_reported": 3.63e-15,
+    "source_id": "shell_frozen",
+    "source_record_first": 52,
+    "source_record_last": 193
+  }
+]

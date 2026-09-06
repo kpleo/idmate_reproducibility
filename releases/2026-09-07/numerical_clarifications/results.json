@@ -1,0 +1,574 @@
+{
+  "format_version": 1,
+  "historical_candidates": {
+    "count": 10,
+    "window_criterion": 0.05,
+    "raw_bound_exceedances": 6,
+    "window_criterion_exceedances": 0,
+    "full_distance_above_window_criterion": 7,
+    "trace_covers_positive_excess_count": 10,
+    "largest_ratio_candidate": "Al_2",
+    "largest_positive_excess_candidate": "Al_5",
+    "comparisons": [
+      {
+        "candidate_id": "Si_2",
+        "material": "Si",
+        "iteration": 2,
+        "proposal_family": "low_cutoff",
+        "raw_window_bound": 6.405461617089094e-10,
+        "window_distance": 1.3417299462828892e-09,
+        "full_distance": 0.5401248520107589,
+        "trace_deviation": 2.3283943662022466e-09,
+        "window_over_raw_bound": 2.094665500302579,
+        "positive_window_excess": 7.011837845739798e-10,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Si_3",
+        "material": "Si",
+        "iteration": 3,
+        "proposal_family": "target_subspace",
+        "raw_window_bound": 1.2411575988742632e-10,
+        "window_distance": 1.252133650690354e-10,
+        "full_distance": 0.09478531830282313,
+        "trace_deviation": 2.2917578945680361e-10,
+        "window_over_raw_bound": 1.0088433989575911,
+        "positive_window_excess": 1.0976051816090885e-12,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Si_5",
+        "material": "Si",
+        "iteration": 5,
+        "proposal_family": "low_cutoff",
+        "raw_window_bound": 1.1383570705296913e-09,
+        "window_distance": 1.3069918082137007e-10,
+        "full_distance": 0.4754368010956584,
+        "trace_deviation": 2.1926016557927142e-10,
+        "window_over_raw_bound": 0.1148138700983815,
+        "positive_window_excess": 0.0,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Si_6",
+        "material": "Si",
+        "iteration": 6,
+        "proposal_family": "target_subspace",
+        "raw_window_bound": 2.8906803706003226e-10,
+        "window_distance": 1.2402301990562243e-10,
+        "full_distance": 0.031185853769409466,
+        "trace_deviation": 2.206510529845218e-10,
+        "window_over_raw_bound": 0.4290443909572262,
+        "positive_window_excess": 0.0,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "graphene_5",
+        "material": "graphene",
+        "iteration": 5,
+        "proposal_family": "low_cutoff",
+        "raw_window_bound": 5.014471603316699e-11,
+        "window_distance": 8.192918585600887e-12,
+        "full_distance": 1.2020321195227568,
+        "trace_deviation": 9.920508858840549e-12,
+        "window_over_raw_bound": 0.1633854817361391,
+        "positive_window_excess": 0.0,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "graphene_6",
+        "material": "graphene",
+        "iteration": 6,
+        "proposal_family": "target_subspace",
+        "raw_window_bound": 0.003624397849323171,
+        "window_distance": 1.6435802041322418e-10,
+        "full_distance": 0.40319758540109,
+        "trace_deviation": 1.898032842007069e-10,
+        "window_over_raw_bound": 4.534767628888115e-08,
+        "positive_window_excess": 0.0,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Al_2",
+        "material": "Al",
+        "iteration": 2,
+        "proposal_family": "low_cutoff",
+        "raw_window_bound": 3.2339644382612894e-10,
+        "window_distance": 1.7509520910584184e-09,
+        "full_distance": 0.35446464973969294,
+        "trace_deviation": 4.08344646984915e-09,
+        "window_over_raw_bound": 5.41425895208607,
+        "positive_window_excess": 1.4275556472322895e-09,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Al_3",
+        "material": "Al",
+        "iteration": 3,
+        "proposal_family": "target_subspace",
+        "raw_window_bound": 5.245404976933143e-10,
+        "window_distance": 7.423120930524889e-10,
+        "full_distance": 0.0068202075426530085,
+        "trace_deviation": 1.7516068595568868e-09,
+        "window_over_raw_bound": 1.4151664100614405,
+        "positive_window_excess": 2.1777159535917458e-10,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Al_5",
+        "material": "Al",
+        "iteration": 5,
+        "proposal_family": "low_cutoff",
+        "raw_window_bound": 3.4121134387813345e-10,
+        "window_distance": 1.7705490658295847e-09,
+        "full_distance": 0.3573667978777864,
+        "trace_deviation": 4.140183307299594e-09,
+        "window_over_raw_bound": 5.189009971667154,
+        "positive_window_excess": 1.4293377219514513e-09,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      },
+      {
+        "candidate_id": "Al_6",
+        "material": "Al",
+        "iteration": 6,
+        "proposal_family": "target_subspace",
+        "raw_window_bound": 5.206888680451836e-10,
+        "window_distance": 7.544807629763631e-10,
+        "full_distance": 0.004500052106619667,
+        "trace_deviation": 1.7828316600798644e-09,
+        "window_over_raw_bound": 1.449004980284871,
+        "positive_window_excess": 2.3379189493117944e-10,
+        "trace_covers_positive_excess": true,
+        "window_above_criterion": false
+      }
+    ]
+  },
+  "material_separation": {
+    "included": 58,
+    "excluded_abstentions": 8,
+    "decisions_by_material": {
+      "Si": {
+        "accept": 16,
+        "reject": 6
+      },
+      "graphene": {
+        "accept": 8,
+        "reject": 6,
+        "abstain": 8
+      },
+      "Al": {
+        "accept": 16,
+        "reject": 6
+      }
+    },
+    "decisions_by_proposal_family": {
+      "low_cutoff": {
+        "accept": 22,
+        "abstain": 2
+      },
+      "target_subspace": {
+        "accept": 18,
+        "abstain": 6
+      },
+      "coarse_k": {
+        "reject": 18
+      }
+    },
+    "pooled": {
+      "accepted": 40,
+      "rejected": 18,
+      "pairs": 720,
+      "concordant": 500,
+      "tied": 0,
+      "discordant": 220,
+      "auc": 0.6944444444444444
+    },
+    "same_material": {
+      "pairs": 240,
+      "concordant": 156,
+      "tied": 0,
+      "discordant": 84,
+      "auc": 0.65
+    },
+    "cross_material": {
+      "pairs": 480,
+      "concordant": 344,
+      "tied": 0,
+      "discordant": 136,
+      "auc": 0.7166666666666667
+    },
+    "same_material_pair_fraction": 0.3333333333333333,
+    "equal_material_mean_auc": 0.5833333333333334,
+    "per_material": {
+      "Si": {
+        "accepted_material": "Si",
+        "rejected_material": "Si",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 48,
+        "tied": 0,
+        "discordant": 48,
+        "auc": 0.5
+      },
+      "graphene": {
+        "accepted_material": "graphene",
+        "rejected_material": "graphene",
+        "accepted": 8,
+        "rejected": 6,
+        "pairs": 48,
+        "concordant": 12,
+        "tied": 0,
+        "discordant": 36,
+        "auc": 0.25
+      },
+      "Al": {
+        "accepted_material": "Al",
+        "rejected_material": "Al",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 96,
+        "tied": 0,
+        "discordant": 0,
+        "auc": 1.0
+      }
+    },
+    "material_pair_cells": [
+      {
+        "accepted_material": "Si",
+        "rejected_material": "Si",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 48,
+        "tied": 0,
+        "discordant": 48,
+        "auc": 0.5
+      },
+      {
+        "accepted_material": "Si",
+        "rejected_material": "graphene",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 80,
+        "tied": 0,
+        "discordant": 16,
+        "auc": 0.8333333333333334
+      },
+      {
+        "accepted_material": "Si",
+        "rejected_material": "Al",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 96,
+        "tied": 0,
+        "discordant": 0,
+        "auc": 1.0
+      },
+      {
+        "accepted_material": "graphene",
+        "rejected_material": "Si",
+        "accepted": 8,
+        "rejected": 6,
+        "pairs": 48,
+        "concordant": 0,
+        "tied": 0,
+        "discordant": 48,
+        "auc": 0.0
+      },
+      {
+        "accepted_material": "graphene",
+        "rejected_material": "graphene",
+        "accepted": 8,
+        "rejected": 6,
+        "pairs": 48,
+        "concordant": 12,
+        "tied": 0,
+        "discordant": 36,
+        "auc": 0.25
+      },
+      {
+        "accepted_material": "graphene",
+        "rejected_material": "Al",
+        "accepted": 8,
+        "rejected": 6,
+        "pairs": 48,
+        "concordant": 24,
+        "tied": 0,
+        "discordant": 24,
+        "auc": 0.5
+      },
+      {
+        "accepted_material": "Al",
+        "rejected_material": "Si",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 48,
+        "tied": 0,
+        "discordant": 48,
+        "auc": 0.5
+      },
+      {
+        "accepted_material": "Al",
+        "rejected_material": "graphene",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 96,
+        "tied": 0,
+        "discordant": 0,
+        "auc": 1.0
+      },
+      {
+        "accepted_material": "Al",
+        "rejected_material": "Al",
+        "accepted": 16,
+        "rejected": 6,
+        "pairs": 96,
+        "concordant": 96,
+        "tied": 0,
+        "discordant": 0,
+        "auc": 1.0
+      }
+    ],
+    "deletion_of_material": {
+      "Si": {
+        "accepted": 24,
+        "rejected": 12,
+        "pairs": 288,
+        "concordant": 228,
+        "tied": 0,
+        "discordant": 60,
+        "auc": 0.7916666666666666
+      },
+      "graphene": {
+        "accepted": 32,
+        "rejected": 12,
+        "pairs": 384,
+        "concordant": 288,
+        "tied": 0,
+        "discordant": 96,
+        "auc": 0.75
+      },
+      "Al": {
+        "accepted": 24,
+        "rejected": 12,
+        "pairs": 288,
+        "concordant": 140,
+        "tied": 0,
+        "discordant": 148,
+        "auc": 0.4861111111111111
+      }
+    },
+    "candidate_bootstrap": {
+      "resamples": 10000,
+      "seed": 20260829,
+      "ci95_percentile": [
+        0.5444444444444444,
+        0.8305555555555556
+      ],
+      "resampling_unit": "candidate, independently within each decision group",
+      "material_or_trajectory_cluster_resampling": false
+    }
+  },
+  "silicon_shells": {
+    "configurations": {
+      "exploratory": {
+        "derivative_columns": 128,
+        "printed_shells": 37,
+        "total_shells_reported": 99,
+        "crossings": {
+          "0.90": {
+            "shell_key": 11,
+            "radius_bohr_inv": 2.0311,
+            "cumulative_share": 0.927397
+          },
+          "0.99": {
+            "shell_key": 24,
+            "radius_bohr_inv": 3.0001,
+            "cumulative_share": 0.991931
+          }
+        },
+        "cumulative_at_selected_shells": {
+          "11": 0.927397,
+          "24": 0.991931,
+          "27": 0.996323
+        },
+        "decay_fit": {
+          "shells": 34,
+          "share_threshold": 1e-08,
+          "slope_decades_per_bohr_inverse": -1.529051047423232
+        }
+      },
+      "selection": {
+        "derivative_columns": 136,
+        "printed_shells": 142,
+        "total_shells_reported": 715,
+        "crossings": {
+          "0.90": {
+            "shell_key": 11,
+            "radius_bohr_inv": 2.0311,
+            "cumulative_share": 0.908607
+          },
+          "0.99": {
+            "shell_key": 27,
+            "radius_bohr_inv": 3.1821,
+            "cumulative_share": 0.992773
+          }
+        },
+        "cumulative_at_selected_shells": {
+          "11": 0.908607,
+          "24": 0.987312,
+          "27": 0.992773
+        }
+      },
+      "frozen": {
+        "derivative_columns": 168,
+        "printed_shells": 142,
+        "total_shells_reported": 715,
+        "crossings": {
+          "0.90": {
+            "shell_key": 11,
+            "radius_bohr_inv": 2.0311,
+            "cumulative_share": 0.904053
+          },
+          "0.99": {
+            "shell_key": 27,
+            "radius_bohr_inv": 3.1821,
+            "cumulative_share": 0.992685
+          }
+        },
+        "cumulative_at_selected_shells": {
+          "11": 0.904053,
+          "24": 0.982448,
+          "27": 0.992685
+        }
+      }
+    },
+    "exploratory_self_shell": {
+      "input_shell_groups": 9,
+      "columns": 128,
+      "minimum_mean_fraction": 0.140539,
+      "maximum_mean_fraction": 0.589853,
+      "monotonically_decreasing_with_input_shell": false
+    }
+  },
+  "h2_reuse": {
+    "attempts": 60,
+    "retained_window_open": 54,
+    "occupied_window_open": 60,
+    "provisional_reuse_passed": 29,
+    "retained_open_iterations": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "reuse_passed_iterations": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "retained_open_but_reuse_failed": 25,
+    "open_failures_with_unconverged_residual": 25,
+    "maximum_margin_reconstruction_difference_ha": 1.0000490019423935e-12,
+    "separate_perturbative_comparison": {
+      "within_relative_error_0p10": 60,
+      "relative_error_0p10_denominator": "A",
+      "mean_distance_over_A": 0.9997777826944746,
+      "mean_relative_error_over_A": 0.005450149650073216,
+      "mean_relative_error_over_distance": 0.005399816582960765,
+      "maximum_relative_error_over_A": 0.07384926785221846,
+      "log_distance_vs_log_A_slope": 0.9990746934898366
+    }
+  }
+}

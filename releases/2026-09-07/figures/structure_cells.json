@@ -1,0 +1,27 @@
+{
+  "units": "bohr",
+  "purpose": "Periodic crystal motifs for material identification; visual repeats are not calculation sizes.",
+  "cells": {
+    "si_scope": {
+      "element": "Si", "prototype": "diamond", "label": "Diamond Si",
+      "lattice": [[0,5.13,5.13],[5.13,0,5.13],[5.13,5.13,0]],
+      "fractional": [[0,0,0],[0.25,0.25,0.25]], "conventional_a": 10.26
+    },
+    "graphene_scope": {
+      "element": "C", "prototype": "honeycomb", "label": "Graphene",
+      "lattice": [[4.6487262664,0,0],[-2.3243631332,4.0259150420,0],[0,0,20]],
+      "fractional": [[0,0,0],[0.3333333333333333,0.6666666666666666,0]]
+    },
+    "al_scope": {
+      "element": "Al", "prototype": "fcc", "label": "FCC Al",
+      "lattice": [[7.65,0,0],[0,7.65,0],[0,0,7.65]],
+      "fractional": [[0,0,0],[0,0.5,0.5],[0.5,0,0.5],[0.5,0.5,0]],
+      "conventional_a": 7.65
+    },
+    "si_bands": {
+      "element": "Si", "prototype": "diamond", "label": "Diamond Si",
+      "lattice": [[0,5.131551,5.131551],[5.131551,0,5.131551],[5.131551,5.131551,0]],
+      "fractional": [[0,0,0],[0.25,0.25,0.25]], "conventional_a": 10.263102
+    }
+  }
+}

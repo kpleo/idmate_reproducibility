@@ -5,7 +5,7 @@ __pycache__/
 .pytest_cache/
 build/
 
-# Numerical inputs are supplied separately and are never committed here.
+# Historical inputs are supplied separately.
 data/derived/*
 !data/derived/.gitkeep
 
@@ -44,3 +44,6 @@ outputs/tables/*
 *.tar
 *.tar.gz
 
+# Versioned lightweight derived numerical inputs.
+!releases/2026-09-07/data/*.csv
+!releases/2026-09-07/numerical_clarifications/*.csv

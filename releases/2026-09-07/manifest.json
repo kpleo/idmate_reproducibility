@@ -1,0 +1,227 @@
+{
+  "version": "2026-09-07",
+  "figure_count": 5,
+  "material_table_count": 3,
+  "numerical_clarification_sets": 4,
+  "data_level": "lightweight derived numerical records",
+  "DFT_calculation_regeneration": false,
+  "hierarchical_bootstrap_regeneration": false,
+  "material_separation_row_bootstrap_regeneration": true,
+  "files": [
+    {
+      "file": "DATA_DICTIONARY.md",
+      "bytes": 5413,
+      "sha256": "1cd774adefe60cc2254d07441f10b8deec48e897a4174af805db18b277f65b8f"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4438,
+      "sha256": "06e691ad5ce94afb23f3b9f24df2ee6c0c5aab84c66c49c16f7d660a1df4424f"
+    },
+    {
+      "file": "build.py",
+      "bytes": 2667,
+      "sha256": "bf4349a2c5eab887b9000b2692b75a7b109b6649aef414091300d19cec62cbeb"
+    },
+    {
+      "file": "data/e0.csv",
+      "bytes": 657334,
+      "sha256": "e1cf95406cc57cc6002885e2345d9197336484c9144a1788d0266ed7dbe338b5"
+    },
+    {
+      "file": "data/e3_al.csv",
+      "bytes": 132340,
+      "sha256": "27ecc7a4948ce2f02413e394524a4666b2fc6ee9d2180338ea546aee48b847c9"
+    },
+    {
+      "file": "data/e3_graphene.csv",
+      "bytes": 13165,
+      "sha256": "e2b12cacf7e7f7971a505b4d02970b938b22089f2e136ffd1efe42edb27904af"
+    },
+    {
+      "file": "data/gk_al.csv",
+      "bytes": 33260,
+      "sha256": "b46eb01520e632f2470ffdb37ba285ddd05f67cc48547234dcb1d044dc96f3ba"
+    },
+    {
+      "file": "data/gk_graphene.csv",
+      "bytes": 25846,
+      "sha256": "1f551ad0d6659553bbe5917c5cd7a4f625f991c598510244f7434db4d1b4177f"
+    },
+    {
+      "file": "data/screen_scope.csv",
+      "bytes": 1316,
+      "sha256": "d829cb2da03aafa85869d16f138fadd7b58116cc8e8a2e43207bddef2d0f5c01"
+    },
+    {
+      "file": "data/shells.csv",
+      "bytes": 6878,
+      "sha256": "08da5ca5fdf0bb953cc33f9e8fc2e5f2a2faf5afa06da285bced5e5791e7c05b"
+    },
+    {
+      "file": "data/silicon_physics.json",
+      "bytes": 23892,
+      "sha256": "f7f927593bc9998d41ec824091b9634b51843cca035ac6f0e84374e2c942fc1d"
+    },
+    {
+      "file": "data/supplement.json",
+      "bytes": 7380,
+      "sha256": "69abd6a8708819f14fde12adcd0b2aaa9a9247664e09e0e4b7e12242bc9fc433"
+    },
+    {
+      "file": "figures/common.py",
+      "bytes": 6966,
+      "sha256": "cd96c0f40369dbc65ba2148c14f6fc6a5919819b7a3a4b0c48ac9e2ad664aeac"
+    },
+    {
+      "file": "figures/crystal_motifs.py",
+      "bytes": 5474,
+      "sha256": "6fdeb5eb84ff66fb5340c51e70990a52e17529304b1e8f28442be77e53805114"
+    },
+    {
+      "file": "figures/fig1.py",
+      "bytes": 13947,
+      "sha256": "c783c5a23b7755c1ce8f1e4854387f55ccff6923a95bb6d165cc2effb6b5e50b"
+    },
+    {
+      "file": "figures/fig2_scope.py",
+      "bytes": 4421,
+      "sha256": "b6a8165ce23ff8665dea98c0e8e1425bbaadf8be669bca50511713b1776906ff"
+    },
+    {
+      "file": "figures/fig3_physics.py",
+      "bytes": 7665,
+      "sha256": "b918fba7f164e21ad453b04bf66cd23df93f97d2d332a6eaf5398dc7ce1c8aa0"
+    },
+    {
+      "file": "figures/fig_supplement.py",
+      "bytes": 12096,
+      "sha256": "e643ed5b32293b41e19a885c4deb5e3c14ec6e300e3ff9e883af64b6c3865935"
+    },
+    {
+      "file": "figures/structure_cells.json",
+      "bytes": 1123,
+      "sha256": "8242ec44724fe4e0fb57941c7a3a3530ae250ea8d7985b0dff313a8d95ae6aab"
+    },
+    {
+      "file": "figures/style.py",
+      "bytes": 2627,
+      "sha256": "448ab2a6c370a68aa308c9dd1c27972ea91457852ca863ade9dd8282b4994a9e"
+    },
+    {
+      "file": "figures/test_crystal_motifs.py",
+      "bytes": 1744,
+      "sha256": "45a9d96edd4ef57f478790c95c2804c017f8d186f9ac458a7da17b31061d7e49"
+    },
+    {
+      "file": "materials/README.md",
+      "bytes": 3368,
+      "sha256": "5e14085f2a400cb5413831c2f6bfdcdec4adf8c6d93f22085ad376ce402ddb4a"
+    },
+    {
+      "file": "materials/materials.json",
+      "bytes": 17536,
+      "sha256": "b62137f05511e94b9dfab1d4bf902e20453911ab73697806f2e39accbac6bcc2"
+    },
+    {
+      "file": "materials/numerical_crosscheck.json",
+      "bytes": 5338,
+      "sha256": "aa130e53d2a7d04299119bf06abff0e4cf59b3796fdb0d62cae1ea8fa78ee28f"
+    },
+    {
+      "file": "materials/reproduce.py",
+      "bytes": 4694,
+      "sha256": "4439c625bba7ee92cabba9dc3fbc16622c1d7dc245480f699b70640255cf4bd7"
+    },
+    {
+      "file": "materials/test_reproduce.py",
+      "bytes": 2946,
+      "sha256": "4174d0231845f8a215979616ab1e864eec3d5d663c0e36f7eef27d2dbee310bb"
+    },
+    {
+      "file": "numerical_clarifications/README.md",
+      "bytes": 9329,
+      "sha256": "5cf409e0381ec0d901dd586af30fc5b8193672f4ee0384450043ad1e207c0960"
+    },
+    {
+      "file": "numerical_clarifications/excluded_candidates.csv",
+      "bytes": 1063,
+      "sha256": "8144d6cf294b0a30accc35ab9d92898255056c4aede6fb8c2ecdab2efa092e34"
+    },
+    {
+      "file": "numerical_clarifications/h2_reuse.csv",
+      "bytes": 12546,
+      "sha256": "e422fcbe51c6d86ef80ee878432fb1c3e1fa70e71b08d24d32848abf0125ec02"
+    },
+    {
+      "file": "numerical_clarifications/historical_candidates.csv",
+      "bytes": 1241,
+      "sha256": "3fa7b4fa10aa76b62dddeb507117133f09b6bb4ab8667cddae7537eecbb32127"
+    },
+    {
+      "file": "numerical_clarifications/input_manifest.json",
+      "bytes": 1081,
+      "sha256": "b0ff9f2b797061f601992d2ba32963c4dcda9d5086e41a500e25c03903724a2c"
+    },
+    {
+      "file": "numerical_clarifications/material_candidates.csv",
+      "bytes": 8286,
+      "sha256": "ae739a8b82dffb841d2af4f9e7fe1df6935111fbd5985df0d4ce0728087383f7"
+    },
+    {
+      "file": "numerical_clarifications/reproduce.py",
+      "bytes": 26384,
+      "sha256": "a487d8559612079cf62b4c9890bf0d8f3ebdec503eeb20060dd8f2899237a9a9"
+    },
+    {
+      "file": "numerical_clarifications/results.json",
+      "bytes": 14716,
+      "sha256": "3a0de5d07ab96a30c70f631650480a4f3a3fbaaf198a6f306af86cbc187d8934"
+    },
+    {
+      "file": "numerical_clarifications/results.md",
+      "bytes": 3639,
+      "sha256": "d678e6966cc3d9a7d3b09e88d73af3d3b99c9b43cede23889546e41d7bb7ab66"
+    },
+    {
+      "file": "numerical_clarifications/shell_configurations.json",
+      "bytes": 1709,
+      "sha256": "7c3f347d68d725b3ce1a62a683791d3a54fa3a7a7bddb5ca8c9252d95ab0dd73"
+    },
+    {
+      "file": "numerical_clarifications/shell_probe_scattering.csv",
+      "bytes": 299,
+      "sha256": "bf19f90f20f9f9c8c27312988d8bc6794e77af7945989021e9ba19eae3432bbe"
+    },
+    {
+      "file": "numerical_clarifications/shell_profiles.csv",
+      "bytes": 13291,
+      "sha256": "fa796ac089f8853231fcead2f1255292e62f72c3d29901447d70b0c1be764621"
+    },
+    {
+      "file": "numerical_clarifications/source_coverage.json",
+      "bytes": 27828,
+      "sha256": "70e551f0cbe9eb097d52476e831e3e21f0564f750b86bb1527f4f2d32e4c0aec"
+    },
+    {
+      "file": "numerical_clarifications/test_reproduce.py",
+      "bytes": 16128,
+      "sha256": "53d3bd703b5472914d5292728dbe613031789c9027bd38f66036354f80729ef0"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 31,
+      "sha256": "ffab02cd38c098669394fc0b12735ddd26db591d72e0277569ac9a2868649256"
+    },
+    {
+      "file": "tests/test_numerical_inputs.py",
+      "bytes": 3797,
+      "sha256": "95d5e5eb8666cc3973aba7fa458849384e03e6d23c7f19fc8d0c5a881d1b5c2b"
+    },
+    {
+      "file": "verify.py",
+      "bytes": 1306,
+      "sha256": "0b18210ddba912762ab4426634fcb1966c700a0ba16c4725c904f1d7e57e41e3"
+    }
+  ]
+}

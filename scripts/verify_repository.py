@@ -7,12 +7,13 @@ import argparse
 import json
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 from common import repository_root
 
 
-TEXT_SUFFIXES = {".md", ".py", ".json", ".yml", ".yaml", ".txt", ".toml", ".gitignore", ".gitkeep"}
+TEXT_SUFFIXES = {".md", ".py", ".json", ".csv", ".yml", ".yaml", ".txt", ".toml", ".gitignore", ".gitkeep"}
 FORBIDDEN_SUFFIXES = {
     ".csv", ".tsv", ".jsonl", ".npy", ".npz", ".h5", ".hdf5", ".pt", ".pth",
     ".onnx", ".bin", ".exe", ".so", ".dylib", ".a", ".o", ".out", ".err", ".log",
@@ -100,6 +101,18 @@ def main() -> int:
     findings: list[dict[str, object]] = []
     files_checked = 0
     patterns = text_patterns()
+    release_root = root / "releases" / "2026-09-07"
+    allowed_csv = set()
+    if release_root.is_dir():
+        # Only sealed inputs named in the versioned manifest may be distributed.
+        completed = subprocess.run([sys.executable, str(release_root / "verify.py")],
+                                   capture_output=True, text=True, check=False)
+        if completed.returncode:
+            findings.append({"path": "releases/2026-09-07", "kind": "release identity verification failed"})
+        else:
+            release = json.loads((release_root / "manifest.json").read_text())
+            allowed_csv = {(release_root / entry["file"]).resolve()
+                           for entry in release["files"] if entry["file"].endswith(".csv")}
 
     for path in repository_files(root):
         files_checked += 1
@@ -108,7 +121,7 @@ def main() -> int:
         if size > args.max_bytes:
             findings.append({"path": relative, "kind": "large file", "bytes": size})
         reason = forbidden_name(path)
-        if reason:
+        if reason and not (path.suffix == ".csv" and path.resolve() in allowed_csv):
             findings.append({"path": relative, "kind": reason})
 
         sample = path.read_bytes()

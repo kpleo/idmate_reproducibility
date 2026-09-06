@@ -1,0 +1,723 @@
+{
+  "schema": "idmate-historical-subspace-materials-v1",
+  "rows": [
+    {
+      "system": "si",
+      "decision": "accept",
+      "reason": null,
+      "iteration": 2,
+      "oracle": false,
+      "maps": 2,
+      "stop_required": false,
+      "cutoff_ha": 3.0,
+      "kpoint_count": 8,
+      "tau_ha": 0.02,
+      "alpha": 0.3,
+      "window_bound": 5.282843422864607e-10,
+      "residual_distance_term": 5.282807895727819e-10,
+      "trace_correction": 3.552713678800501e-15,
+      "window_distance": 1.8906878275335727e-13,
+      "full_distance": 0.09967783355401223,
+      "density_distance": 0.03753687864395921,
+      "next_mixed_density_distance": 0.011261063593187761,
+      "mixing_identity_error": -1.734723475976807e-18,
+      "delta_F_full_ha": 0.005651532958242804,
+      "delta_F_window_ha": 6.539213615042172e-14,
+      "delta_F_same_trace_window_ha": 6.539213615042172e-14,
+      "same_trace_reference_defect": 3.5083047578154947e-13,
+      "candidate_trace_defect": 1.7763568394002505e-15,
+      "window_reference_trace_defect": 3.526068326209497e-13,
+      "window_numerical_status": "verified_pass",
+      "wall_s": 10.914474529679865,
+      "window_coupling_ha": 0.09817867452629377,
+      "minimum_occupation_margin": 5.5548021576934155e-09,
+      "window_size_per_k": [
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "system": "graphene",
+      "decision": "abstain",
+      "reason": "empty_window",
+      "iteration": 2,
+      "oracle": false,
+      "maps": 2,
+      "stop_required": false,
+      "cutoff_ha": 4.0,
+      "kpoint_count": 9,
+      "tau_ha": 0.01,
+      "alpha": 0.2,
+      "window_bound": null,
+      "residual_distance_term": null,
+      "trace_correction": null,
+      "window_distance": null,
+      "full_distance": 0.0945466286136579,
+      "density_distance": 0.05987586525365429,
+      "next_mixed_density_distance": 0.011975173050730864,
+      "mixing_identity_error": 5.204170427930421e-18,
+      "delta_F_full_ha": 0.012671455424208816,
+      "delta_F_window_ha": null,
+      "delta_F_same_trace_window_ha": null,
+      "same_trace_reference_defect": null,
+      "candidate_trace_defect": null,
+      "window_reference_trace_defect": null,
+      "window_numerical_status": "unknown",
+      "wall_s": 19.12341274181381,
+      "window_coupling_ha": null,
+      "minimum_occupation_margin": null,
+      "window_size_per_k": []
+    },
+    {
+      "system": "al",
+      "decision": "accept",
+      "reason": null,
+      "iteration": 2,
+      "oracle": false,
+      "maps": 2,
+      "stop_required": false,
+      "cutoff_ha": 3.0,
+      "kpoint_count": 27,
+      "tau_ha": 0.02,
+      "alpha": 0.3,
+      "window_bound": 1.4142092577765488e-10,
+      "residual_distance_term": 1.4133607800443102e-10,
+      "trace_correction": 8.484777322385635e-14,
+      "window_distance": 4.120087543670347e-12,
+      "full_distance": 0.0034891214588154704,
+      "density_distance": 0.0012017006191652124,
+      "next_mixed_density_distance": 0.00036051018574956317,
+      "mixing_identity_error": -5.421010862427522e-19,
+      "delta_F_full_ha": 8.595915183796932e-06,
+      "delta_F_window_ha": -2.8210767055725228e-12,
+      "delta_F_same_trace_window_ha": -2.8210767055725228e-12,
+      "same_trace_reference_defect": 9.771738973540778e-12,
+      "candidate_trace_defect": 2.3092638912203256e-14,
+      "window_reference_trace_defect": 9.794831612452981e-12,
+      "window_numerical_status": "verified_pass",
+      "wall_s": 81.35140716237947,
+      "window_coupling_ha": 0.0037123233704176428,
+      "minimum_occupation_margin": 2.4514199959398256e-11,
+      "window_size_per_k": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ]
+    }
+  ],
+  "reference_maps": 6,
+  "settings": {
+    "si": {
+      "candidate_family": "historical_U1_Ritz",
+      "cutoff_ha": 3.0,
+      "density_method": "direct",
+      "distance_gate": 0.05,
+      "eigensolver": "dense_faer",
+      "ewald_eta_bohr_inv": "2/(volume/atom_count)^(1/3)",
+      "extra_bands": 2,
+      "f_convention": "spin-degenerate [0,2]; Q=U diag(f/2) U*, zero orthogonal complement",
+      "frozen_edge_margin_halfoccupation": 1e-06,
+      "grid_dims": [
+        11,
+        11,
+        11
+      ],
+      "hamiltonian": "dense_FFT_local_plus_KB",
+      "historical_retention_f_gt": 1e-12,
+      "initial_density": "neutral uniform N/volume",
+      "iteration": 2,
+      "kpoint_threads": 1,
+      "kpoints": [
+        {
+          "frac": [
+            -0.25,
+            -0.25,
+            -0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            0.25,
+            -0.25,
+            -0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            -0.25,
+            0.25,
+            -0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            0.25,
+            0.25,
+            -0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            -0.25,
+            -0.25,
+            0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            0.25,
+            -0.25,
+            0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            -0.25,
+            0.25,
+            0.25
+          ],
+          "weight": 0.125
+        },
+        {
+          "frac": [
+            0.25,
+            0.25,
+            0.25
+          ],
+          "weight": 0.125
+        }
+      ],
+      "label": "si_diamond_release_mp222",
+      "lattice_bohr": [
+        [
+          0.0,
+          5.13,
+          5.13
+        ],
+        [
+          5.13,
+          0.0,
+          5.13
+        ],
+        [
+          5.13,
+          5.13,
+          0.0
+        ]
+      ],
+      "linear_mixing": 0.3,
+      "max_material_reference_maps": 2,
+      "metric": "sqrt(2 sum_k w_k ||Q_k-Qref_k||_F^2), real embedding of complex half-density",
+      "missing_extra_bands": "abstain, no cap or borrowing",
+      "species": [
+        {
+          "symbol": "Si",
+          "zval": 4.0,
+          "positions_frac": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.25,
+              0.25,
+              0.25
+            ]
+          ]
+        }
+      ],
+      "target_electrons": 8.0,
+      "tau_ha": 0.02,
+      "trace_gate_electrons": 1e-06,
+      "volume_bohr3": 270.011394,
+      "whole_scf_loops": 0,
+      "window_frozen_rule": "keep actual candidate Fermi occupations; no snap to 0/2",
+      "window_half_width_tau": 18.0,
+      "window_target": "N minus actual excluded candidate occupations, including above-window tails",
+      "xc": "LDA_PZ81",
+      "potential_family": "HGH LDA"
+    },
+    "graphene": {
+      "candidate_family": "historical_U1_Ritz",
+      "cutoff_ha": 4.0,
+      "density_method": "direct",
+      "distance_gate": 0.05,
+      "eigensolver": "dense_faer",
+      "ewald_eta_bohr_inv": "2/(volume/atom_count)^(1/3)",
+      "extra_bands": 2,
+      "f_convention": "spin-degenerate [0,2]; Q=U diag(f/2) U*, zero orthogonal complement",
+      "frozen_edge_margin_halfoccupation": 1e-06,
+      "grid_dims": [
+        9,
+        9,
+        37
+      ],
+      "hamiltonian": "dense_FFT_local_plus_KB",
+      "historical_retention_f_gt": 1e-12,
+      "initial_density": "neutral uniform N/volume",
+      "iteration": 2,
+      "kpoint_threads": 1,
+      "kpoints": [
+        {
+          "frac": [
+            -0.3333333333333333,
+            -0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            0.0,
+            -0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            -0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.0,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.0,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            0.0,
+            0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.1111111111111111
+        }
+      ],
+      "label": "graphene_release_mp331",
+      "lattice_bohr": [
+        [
+          4.6487262664,
+          0.0,
+          0.0
+        ],
+        [
+          -2.3243631332,
+          4.025915042,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          20.0
+        ]
+      ],
+      "linear_mixing": 0.2,
+      "max_material_reference_maps": 2,
+      "metric": "sqrt(2 sum_k w_k ||Q_k-Qref_k||_F^2), real embedding of complex half-density",
+      "missing_extra_bands": "abstain, no cap or borrowing",
+      "species": [
+        {
+          "symbol": "C",
+          "zval": 4.0,
+          "positions_frac": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.3333333333333333,
+              0.6666666666666666,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "target_electrons": 8.0,
+      "tau_ha": 0.01,
+      "trace_gate_electrons": 1e-06,
+      "volume_bohr3": 374.3075400408052,
+      "whole_scf_loops": 0,
+      "window_frozen_rule": "keep actual candidate Fermi occupations; no snap to 0/2",
+      "window_half_width_tau": 18.0,
+      "window_target": "N minus actual excluded candidate occupations, including above-window tails",
+      "xc": "LDA_PZ81",
+      "potential_family": "HGH LDA"
+    },
+    "al": {
+      "candidate_family": "historical_U1_Ritz",
+      "cutoff_ha": 3.0,
+      "density_method": "direct",
+      "distance_gate": 0.05,
+      "eigensolver": "dense_faer",
+      "ewald_eta_bohr_inv": "2/(volume/atom_count)^(1/3)",
+      "extra_bands": 2,
+      "f_convention": "spin-degenerate [0,2]; Q=U diag(f/2) U*, zero orthogonal complement",
+      "frozen_edge_margin_halfoccupation": 1e-06,
+      "grid_dims": [
+        11,
+        11,
+        11
+      ],
+      "hamiltonian": "dense_FFT_local_plus_KB",
+      "historical_retention_f_gt": 1e-12,
+      "initial_density": "neutral uniform N/volume",
+      "iteration": 2,
+      "kpoint_threads": 1,
+      "kpoints": [
+        {
+          "frac": [
+            -0.3333333333333333,
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            -0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.0,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            0.0,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.0,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.3333333333333333,
+            -0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            -0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            -0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            -0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.0,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.0,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.0
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            -0.3333333333333333,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            -0.3333333333333333,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            -0.3333333333333333,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.0,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            0.0,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.0,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            -0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.0,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        },
+        {
+          "frac": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ],
+          "weight": 0.037037037037037035
+        }
+      ],
+      "label": "fcc_al_release_mp333",
+      "lattice_bohr": [
+        [
+          7.65,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.65,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          7.65
+        ]
+      ],
+      "linear_mixing": 0.3,
+      "max_material_reference_maps": 2,
+      "metric": "sqrt(2 sum_k w_k ||Q_k-Qref_k||_F^2), real embedding of complex half-density",
+      "missing_extra_bands": "abstain, no cap or borrowing",
+      "species": [
+        {
+          "symbol": "Al",
+          "zval": 3.0,
+          "positions_frac": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.0,
+              0.5
+            ],
+            [
+              0.5,
+              0.5,
+              0.0
+            ]
+          ]
+        }
+      ],
+      "target_electrons": 12.0,
+      "tau_ha": 0.02,
+      "trace_gate_electrons": 1e-06,
+      "volume_bohr3": 447.6971250000001,
+      "whole_scf_loops": 0,
+      "window_frozen_rule": "keep actual candidate Fermi occupations; no snap to 0/2",
+      "window_half_width_tau": 18.0,
+      "window_target": "N minus actual excluded candidate occupations, including above-window tails",
+      "xc": "LDA_PZ81",
+      "potential_family": "HGH LDA"
+    }
+  },
+  "scope": "three single-step, same-Hamiltonian comparisons; not SCF convergence or speedup"
+}

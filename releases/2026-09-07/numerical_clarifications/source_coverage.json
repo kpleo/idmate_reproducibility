@@ -1,0 +1,856 @@
+{
+  "format_version": 1,
+  "description": "Processed numerical observations for four IDMate comparisons. Original files are identified by checksum and are not distributed.",
+  "metric": "k-weighted Frobenius norm of the real embedding of the per-spin density matrix",
+  "historical_candidates": {
+    "count": 10,
+    "numeric_fields_checked_per_row": 4,
+    "reference_and_observation_values_match_prior_extract": true,
+    "comparisons": [
+      {
+        "candidate_id": "Si_2",
+        "observation_source": "Si_multiple_observed",
+        "observation_record": 1,
+        "reference_source": "Si_multiple_reference",
+        "reference_record": 1,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Si_3",
+        "observation_source": "Si_multiple_observed",
+        "observation_record": 2,
+        "reference_source": "Si_multiple_reference",
+        "reference_record": 2,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Si_5",
+        "observation_source": "Si_multiple_observed",
+        "observation_record": 4,
+        "reference_source": "Si_multiple_reference",
+        "reference_record": 4,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Si_6",
+        "observation_source": "Si_multiple_observed",
+        "observation_record": 5,
+        "reference_source": "Si_multiple_reference",
+        "reference_record": 5,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "graphene_5",
+        "observation_source": "graphene_multiple_observed",
+        "observation_record": 4,
+        "reference_source": "graphene_multiple_reference",
+        "reference_record": 4,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "graphene_6",
+        "observation_source": "graphene_multiple_observed",
+        "observation_record": 5,
+        "reference_source": "graphene_multiple_reference",
+        "reference_record": 5,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Al_2",
+        "observation_source": "Al_multiple_observed",
+        "observation_record": 1,
+        "reference_source": "Al_multiple_reference",
+        "reference_record": 1,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Al_3",
+        "observation_source": "Al_multiple_observed",
+        "observation_record": 2,
+        "reference_source": "Al_multiple_reference",
+        "reference_record": 2,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Al_5",
+        "observation_source": "Al_multiple_observed",
+        "observation_record": 4,
+        "reference_source": "Al_multiple_reference",
+        "reference_record": 4,
+        "matching_numeric_fields": 4
+      },
+      {
+        "candidate_id": "Al_6",
+        "observation_source": "Al_multiple_observed",
+        "observation_record": 5,
+        "reference_source": "Al_multiple_reference",
+        "reference_record": 5,
+        "matching_numeric_fields": 4
+      }
+    ],
+    "not_established": [
+      "Identity of the complete reference and observation states",
+      "Cause of floating-point excess above the raw bound",
+      "Reconstruction of subsequent trace-corrected bounds"
+    ]
+  },
+  "material_candidates": {
+    "total": 66,
+    "included": 58,
+    "accept": 40,
+    "reject": 18,
+    "abstain": 8,
+    "single_proposal_runs": 48,
+    "multiple_proposal_runs": 3,
+    "runs": [
+      {
+        "run_id": "Si_single_low_cutoff_02",
+        "source_id": "Si_single_low_cutoff_02",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_low_cutoff_05",
+        "source_id": "Si_single_low_cutoff_05",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_low_cutoff_08",
+        "source_id": "Si_single_low_cutoff_08",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_low_cutoff_11",
+        "source_id": "Si_single_low_cutoff_11",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_low_cutoff_14",
+        "source_id": "Si_single_low_cutoff_14",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_low_cutoff_17",
+        "source_id": "Si_single_low_cutoff_17",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_target_subspace_03",
+        "source_id": "Si_single_target_subspace_03",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_target_subspace_06",
+        "source_id": "Si_single_target_subspace_06",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_target_subspace_09",
+        "source_id": "Si_single_target_subspace_09",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_target_subspace_12",
+        "source_id": "Si_single_target_subspace_12",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_target_subspace_15",
+        "source_id": "Si_single_target_subspace_15",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_target_subspace_18",
+        "source_id": "Si_single_target_subspace_18",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Si_single_coarse_k_04",
+        "source_id": "Si_single_coarse_k_04",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Si_single_coarse_k_07",
+        "source_id": "Si_single_coarse_k_07",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Si_single_coarse_k_10",
+        "source_id": "Si_single_coarse_k_10",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Si_single_coarse_k_13",
+        "source_id": "Si_single_coarse_k_13",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_low_cutoff_02",
+        "source_id": "graphene_single_low_cutoff_02",
+        "records": 1,
+        "decisions": {
+          "abstain": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_low_cutoff_05",
+        "source_id": "graphene_single_low_cutoff_05",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_low_cutoff_08",
+        "source_id": "graphene_single_low_cutoff_08",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_low_cutoff_11",
+        "source_id": "graphene_single_low_cutoff_11",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_low_cutoff_14",
+        "source_id": "graphene_single_low_cutoff_14",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_low_cutoff_17",
+        "source_id": "graphene_single_low_cutoff_17",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_target_subspace_03",
+        "source_id": "graphene_single_target_subspace_03",
+        "records": 1,
+        "decisions": {
+          "abstain": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_target_subspace_06",
+        "source_id": "graphene_single_target_subspace_06",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_target_subspace_09",
+        "source_id": "graphene_single_target_subspace_09",
+        "records": 1,
+        "decisions": {
+          "abstain": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_target_subspace_12",
+        "source_id": "graphene_single_target_subspace_12",
+        "records": 1,
+        "decisions": {
+          "abstain": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_target_subspace_15",
+        "source_id": "graphene_single_target_subspace_15",
+        "records": 1,
+        "decisions": {
+          "abstain": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_target_subspace_18",
+        "source_id": "graphene_single_target_subspace_18",
+        "records": 1,
+        "decisions": {
+          "abstain": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_coarse_k_04",
+        "source_id": "graphene_single_coarse_k_04",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_coarse_k_07",
+        "source_id": "graphene_single_coarse_k_07",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_coarse_k_10",
+        "source_id": "graphene_single_coarse_k_10",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "graphene_single_coarse_k_13",
+        "source_id": "graphene_single_coarse_k_13",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Al_single_low_cutoff_02",
+        "source_id": "Al_single_low_cutoff_02",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_low_cutoff_05",
+        "source_id": "Al_single_low_cutoff_05",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_low_cutoff_08",
+        "source_id": "Al_single_low_cutoff_08",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_low_cutoff_11",
+        "source_id": "Al_single_low_cutoff_11",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_low_cutoff_14",
+        "source_id": "Al_single_low_cutoff_14",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_low_cutoff_17",
+        "source_id": "Al_single_low_cutoff_17",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_target_subspace_03",
+        "source_id": "Al_single_target_subspace_03",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_target_subspace_06",
+        "source_id": "Al_single_target_subspace_06",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_target_subspace_09",
+        "source_id": "Al_single_target_subspace_09",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_target_subspace_12",
+        "source_id": "Al_single_target_subspace_12",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_target_subspace_15",
+        "source_id": "Al_single_target_subspace_15",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_target_subspace_18",
+        "source_id": "Al_single_target_subspace_18",
+        "records": 1,
+        "decisions": {
+          "accept": 1
+        }
+      },
+      {
+        "run_id": "Al_single_coarse_k_04",
+        "source_id": "Al_single_coarse_k_04",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Al_single_coarse_k_07",
+        "source_id": "Al_single_coarse_k_07",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Al_single_coarse_k_10",
+        "source_id": "Al_single_coarse_k_10",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Al_single_coarse_k_13",
+        "source_id": "Al_single_coarse_k_13",
+        "records": 1,
+        "decisions": {
+          "reject": 1
+        }
+      },
+      {
+        "run_id": "Si_multiple",
+        "source_id": "Si_multiple_reference",
+        "records": 6,
+        "decisions": {
+          "accept": 4,
+          "reject": 2
+        }
+      },
+      {
+        "run_id": "graphene_multiple",
+        "source_id": "graphene_multiple_reference",
+        "records": 6,
+        "decisions": {
+          "abstain": 2,
+          "reject": 2,
+          "accept": 2
+        }
+      },
+      {
+        "run_id": "Al_multiple",
+        "source_id": "Al_multiple_reference",
+        "records": 6,
+        "decisions": {
+          "accept": 4,
+          "reject": 2
+        }
+      }
+    ],
+    "previous_summary_comparison": {
+      "auc_full": 0.6944444444444444,
+      "pairs": 720,
+      "discordant_pairs": 220,
+      "bootstrap": {
+        "resamples": 10000,
+        "seed": 20260829,
+        "ci95_percentile": [
+          0.5444444444444444,
+          0.8305555555555556
+        ]
+      }
+    },
+    "overlap_with_historical_candidates": "The ten historical candidates are the accepted rows from the three multiple-proposal calculations."
+  },
+  "shell_profiles": {
+    "included_rows": 321,
+    "included_scattering_groups": 9,
+    "printed_share_threshold": 1e-12,
+    "cumulative_share_decimal_places": 6,
+    "share_significant_digits": 7,
+    "radius_decimal_places": 4,
+    "coverage_limit": "Rounded printed shares and cumulative sums; no complete response matrix or independently reconstructed full-shell closure."
+  },
+  "h2": {
+    "attempts": 60,
+    "trajectory_count": 1,
+    "iterations_inclusive": [
+      2,
+      61
+    ],
+    "retained_windows": 54,
+    "provisional_reuse_passes": 29,
+    "coverage_limit": "Reconstructs scalar-margin comparisons and the composite decision from recorded conditions; it does not solve eigenproblems or certify floating-point eigenvalue enclosures."
+  },
+  "sources": {
+    "historical_table": {
+      "description": "Ten historical accepted candidates, prior numerical extract",
+      "sha256": "71328c962a38b4b935a0d79f2400bbb288ee4d67d29de97bc2f815f8a29ea386",
+      "bytes": 3579
+    },
+    "Si_multiple_observed": {
+      "description": "Si: multiple-proposal observation calculation",
+      "sha256": "0f9d1c3c45c46a7a658572c101840317d4b6684769eff9f9097abb58abd53b25",
+      "bytes": 4298
+    },
+    "Si_multiple_reference": {
+      "description": "Si: multiple-proposal reference calculation",
+      "sha256": "0ab5242c25b6cb27f26efe5440f9dc5b84f1589ce2db3643a5ed7c107821b0e4",
+      "bytes": 4292
+    },
+    "graphene_multiple_observed": {
+      "description": "graphene: multiple-proposal observation calculation",
+      "sha256": "eb3cf0720fc5087c034fde7c3aa54bbc632bde8832a6b97b565498892a6cecf8",
+      "bytes": 4219
+    },
+    "graphene_multiple_reference": {
+      "description": "graphene: multiple-proposal reference calculation",
+      "sha256": "bb3db5f893eb85b892951a15cf86af578015b80b5ecdccd1c1a7a39c5a2d57b2",
+      "bytes": 4156
+    },
+    "Al_multiple_observed": {
+      "description": "Al: multiple-proposal observation calculation",
+      "sha256": "9be492353d0c28819002e5b799722ac5bdb7c2c2bd8bd329ee27e54a5c025304",
+      "bytes": 4303
+    },
+    "Al_multiple_reference": {
+      "description": "Al: multiple-proposal reference calculation",
+      "sha256": "f72e2a4880b07116224d71ca9f25463c0d56fcfffe6b26bce41681e0ca89c39f",
+      "bytes": 4273
+    },
+    "Si_single_low_cutoff_02": {
+      "description": "Si: single-proposal calculation, low_cutoff_02",
+      "sha256": "9a65bd15ffe13a1b9f1b877cfa7726eb75897132b15a3eb76a076af0dfe3d272",
+      "bytes": 688
+    },
+    "Si_single_low_cutoff_05": {
+      "description": "Si: single-proposal calculation, low_cutoff_05",
+      "sha256": "afa4c0e8ea09f0bcae8f07dfa3417004ba39fd25c21834c5ae500ee562a0df5f",
+      "bytes": 685
+    },
+    "Si_single_low_cutoff_08": {
+      "description": "Si: single-proposal calculation, low_cutoff_08",
+      "sha256": "bb97f4f7d9bf719a8b5b68b4ec3c23e055b0594dbab94257a74477b9940f04d2",
+      "bytes": 692
+    },
+    "Si_single_low_cutoff_11": {
+      "description": "Si: single-proposal calculation, low_cutoff_11",
+      "sha256": "b308d4bdd660cec25a6808a3fe46865f63061ec17e4de3793d3ce2f255b9a12b",
+      "bytes": 689
+    },
+    "Si_single_low_cutoff_14": {
+      "description": "Si: single-proposal calculation, low_cutoff_14",
+      "sha256": "26e6bbffb6459c6388b3af1a7bb0648409367915a6617c900df9e331a334902d",
+      "bytes": 691
+    },
+    "Si_single_low_cutoff_17": {
+      "description": "Si: single-proposal calculation, low_cutoff_17",
+      "sha256": "32756a49aa4d2e6b6978a86217678474a8c2737e026b6749ff8d7f8b54607d1a",
+      "bytes": 687
+    },
+    "Si_single_target_subspace_03": {
+      "description": "Si: single-proposal calculation, target_subspace_03",
+      "sha256": "a96f149c7bba7d4ba788f672ee07c934f529dc0562db6ec239986fdc444cfcf4",
+      "bytes": 756
+    },
+    "Si_single_target_subspace_06": {
+      "description": "Si: single-proposal calculation, target_subspace_06",
+      "sha256": "b6009ed035057efd2b37229ea512472b04bd050fb775018fa0c42e87cd22a9ed",
+      "bytes": 753
+    },
+    "Si_single_target_subspace_09": {
+      "description": "Si: single-proposal calculation, target_subspace_09",
+      "sha256": "434548eefb6e4a84cad0035b0687436a8ae6210c18b6cdc153d52a6b5d90b118",
+      "bytes": 754
+    },
+    "Si_single_target_subspace_12": {
+      "description": "Si: single-proposal calculation, target_subspace_12",
+      "sha256": "03f7eb41543b1b2a32da8e880c9e4f7d6218a8efcb991ec9e88ac47fb59f8463",
+      "bytes": 754
+    },
+    "Si_single_target_subspace_15": {
+      "description": "Si: single-proposal calculation, target_subspace_15",
+      "sha256": "9b1186f3bfee29b125e14acbe5cf99827f8287d754e6ec939d3493f58ecd92bb",
+      "bytes": 753
+    },
+    "Si_single_target_subspace_18": {
+      "description": "Si: single-proposal calculation, target_subspace_18",
+      "sha256": "60ffdf4515f31378b7a590e6e1fd94dee5313293ce7fb235bd3044fcc9110c09",
+      "bytes": 756
+    },
+    "Si_single_coarse_k_04": {
+      "description": "Si: single-proposal calculation, coarse_k_04",
+      "sha256": "a497ebf8bf148b359210dcde4464c29285843127dd79b0ec4e8c1b8939736946",
+      "bytes": 707
+    },
+    "Si_single_coarse_k_07": {
+      "description": "Si: single-proposal calculation, coarse_k_07",
+      "sha256": "0aeab04debf95dfa570fc3c5b1b35dfd0d77d96c74b31033a1d9885585d74cf6",
+      "bytes": 708
+    },
+    "Si_single_coarse_k_10": {
+      "description": "Si: single-proposal calculation, coarse_k_10",
+      "sha256": "84112773ecf4e3c33460a78131da61cc908b0c7d52f8d31f3596ff0c8db11d2a",
+      "bytes": 710
+    },
+    "Si_single_coarse_k_13": {
+      "description": "Si: single-proposal calculation, coarse_k_13",
+      "sha256": "27982085bd1a0111364f76d24cc8c9660678a3443005ab9171ed7d67483c5521",
+      "bytes": 710
+    },
+    "graphene_single_low_cutoff_02": {
+      "description": "graphene: single-proposal calculation, low_cutoff_02",
+      "sha256": "33643c051b0df9400ef1b203eaa980994a314dc9d4e5facc11a0365b09ee5828",
+      "bytes": 623
+    },
+    "graphene_single_low_cutoff_05": {
+      "description": "graphene: single-proposal calculation, low_cutoff_05",
+      "sha256": "4c0b89a7b3a514e9b995332ff77922599c91ba46a8f792b7d5e402da0f495038",
+      "bytes": 694
+    },
+    "graphene_single_low_cutoff_08": {
+      "description": "graphene: single-proposal calculation, low_cutoff_08",
+      "sha256": "6e8878bac5707a3abb3b5ce7e5ba5d87fa2a751cbe4afb9dd8978d06c0a9cbe8",
+      "bytes": 696
+    },
+    "graphene_single_low_cutoff_11": {
+      "description": "graphene: single-proposal calculation, low_cutoff_11",
+      "sha256": "17806c64b14fc89a217caf5a4622dc3da4eb0862c826dbf5d4e3e829a538bda7",
+      "bytes": 685
+    },
+    "graphene_single_low_cutoff_14": {
+      "description": "graphene: single-proposal calculation, low_cutoff_14",
+      "sha256": "34b72a68d0ca17b5266e5384e39f24afe6121c6840a4a7be75cc59d55706683f",
+      "bytes": 686
+    },
+    "graphene_single_low_cutoff_17": {
+      "description": "graphene: single-proposal calculation, low_cutoff_17",
+      "sha256": "65154305b5271f55bacd295e9e2434e1d45cad9ea7519ded03091f8dfac0a368",
+      "bytes": 692
+    },
+    "graphene_single_target_subspace_03": {
+      "description": "graphene: single-proposal calculation, target_subspace_03",
+      "sha256": "0f80077eeb43411af70fe8e73470d560a403f5d16cade8b2f4773f6e8bc7b2e3",
+      "bytes": 683
+    },
+    "graphene_single_target_subspace_06": {
+      "description": "graphene: single-proposal calculation, target_subspace_06",
+      "sha256": "a15886d81da6798b66eb19fffb9e6b32eb78d26241d7427d087992cc42bba6fb",
+      "bytes": 742
+    },
+    "graphene_single_target_subspace_09": {
+      "description": "graphene: single-proposal calculation, target_subspace_09",
+      "sha256": "1c1d37ccb109dfe7d216527f08a4766087adbb89a1808736391c1f2af51ce49f",
+      "bytes": 690
+    },
+    "graphene_single_target_subspace_12": {
+      "description": "graphene: single-proposal calculation, target_subspace_12",
+      "sha256": "962dda25a023a2fda4f1e48e6f28f65e54c9b459d2d7e9b22e0e57abe15e55ab",
+      "bytes": 690
+    },
+    "graphene_single_target_subspace_15": {
+      "description": "graphene: single-proposal calculation, target_subspace_15",
+      "sha256": "aad40cbf9b2ca57fb11357981d5fcb07a97e0f7d2314a423c5d8222af7c01616",
+      "bytes": 691
+    },
+    "graphene_single_target_subspace_18": {
+      "description": "graphene: single-proposal calculation, target_subspace_18",
+      "sha256": "5d7f4b79022d89a80686f6a070f2e0361e93bf2761213e21371893441c8506dd",
+      "bytes": 692
+    },
+    "graphene_single_coarse_k_04": {
+      "description": "graphene: single-proposal calculation, coarse_k_04",
+      "sha256": "545dd27d1d6b58a519f8984c6ccf25a10cabf34073460f8d8adb9af736a0e57f",
+      "bytes": 709
+    },
+    "graphene_single_coarse_k_07": {
+      "description": "graphene: single-proposal calculation, coarse_k_07",
+      "sha256": "4978616c60e576d5ead36a97d1717111956f10ac248b063631e0141d4efb76cc",
+      "bytes": 712
+    },
+    "graphene_single_coarse_k_10": {
+      "description": "graphene: single-proposal calculation, coarse_k_10",
+      "sha256": "5e8fa778fb391a0add9d6b766711accd55e0168a3cd0addb1c9e2a5ea7894c45",
+      "bytes": 713
+    },
+    "graphene_single_coarse_k_13": {
+      "description": "graphene: single-proposal calculation, coarse_k_13",
+      "sha256": "918b36c435cc2c120cf9a46e4176da8b42b793b4886c5c67093efc02e23ad68c",
+      "bytes": 716
+    },
+    "Al_single_low_cutoff_02": {
+      "description": "Al: single-proposal calculation, low_cutoff_02",
+      "sha256": "5ec909d3eec390ec1b5299a2a0db158becf2af56d8e78a4436dd5157d1613a18",
+      "bytes": 690
+    },
+    "Al_single_low_cutoff_05": {
+      "description": "Al: single-proposal calculation, low_cutoff_05",
+      "sha256": "da81f6e4ac07dce188086af59922bfc3daaff234b6d97b13b19356234ccd093c",
+      "bytes": 689
+    },
+    "Al_single_low_cutoff_08": {
+      "description": "Al: single-proposal calculation, low_cutoff_08",
+      "sha256": "080a5780aa993774a4721179b8894f0faa5637ecfc80d11f8795b526e348d1b8",
+      "bytes": 682
+    },
+    "Al_single_low_cutoff_11": {
+      "description": "Al: single-proposal calculation, low_cutoff_11",
+      "sha256": "d68375c88a66180673b50edd68527884990691da6f53332d5cb4d2cf8a56727f",
+      "bytes": 692
+    },
+    "Al_single_low_cutoff_14": {
+      "description": "Al: single-proposal calculation, low_cutoff_14",
+      "sha256": "925ce4ada009005a75a2bbe9ffa5ae8c30c599d06a2fe8ab09c98b4b7017b80c",
+      "bytes": 685
+    },
+    "Al_single_low_cutoff_17": {
+      "description": "Al: single-proposal calculation, low_cutoff_17",
+      "sha256": "128b57a36d341818787c7e2f78af20a15a819b934cf513db3b7ffe20cd608aad",
+      "bytes": 682
+    },
+    "Al_single_target_subspace_03": {
+      "description": "Al: single-proposal calculation, target_subspace_03",
+      "sha256": "70199a2333b4e21a7a6224d39dc6ec8d57c6760a790766d2eee697b66c2ad159",
+      "bytes": 748
+    },
+    "Al_single_target_subspace_06": {
+      "description": "Al: single-proposal calculation, target_subspace_06",
+      "sha256": "9d031a605a432aef6573d4a2721e53e5572a89a33c8379a652a7a66fc8b3411f",
+      "bytes": 749
+    },
+    "Al_single_target_subspace_09": {
+      "description": "Al: single-proposal calculation, target_subspace_09",
+      "sha256": "0a8c78eb220711399978d7de54a719c638c937cf0fb58d15fa6c3a07e200fe93",
+      "bytes": 750
+    },
+    "Al_single_target_subspace_12": {
+      "description": "Al: single-proposal calculation, target_subspace_12",
+      "sha256": "e1c876c9992910379c94fa638afa88a0aa6e38a2581bf2ffd57d01847d227ae9",
+      "bytes": 759
+    },
+    "Al_single_target_subspace_15": {
+      "description": "Al: single-proposal calculation, target_subspace_15",
+      "sha256": "b92818c565356b7ecf65a095484da465054e490ccfc8b21954da80f9ac790508",
+      "bytes": 749
+    },
+    "Al_single_target_subspace_18": {
+      "description": "Al: single-proposal calculation, target_subspace_18",
+      "sha256": "acafef0d1f15a6e4394940ebeae52775f08331295fda37a4685adb6c2cab64e0",
+      "bytes": 752
+    },
+    "Al_single_coarse_k_04": {
+      "description": "Al: single-proposal calculation, coarse_k_04",
+      "sha256": "6afedabce073b8bafbe3d7e75b1143f8483936c309fa9a463bc69acf776337b7",
+      "bytes": 704
+    },
+    "Al_single_coarse_k_07": {
+      "description": "Al: single-proposal calculation, coarse_k_07",
+      "sha256": "d914ad9f80be50fa30884ed9de65a9a632c851060aed405fd6604de976c26f2c",
+      "bytes": 703
+    },
+    "Al_single_coarse_k_10": {
+      "description": "Al: single-proposal calculation, coarse_k_10",
+      "sha256": "e39186c98f6fde4189d6c78c20b98d3a501a5b9b3e9be715497231412c64b56a",
+      "bytes": 706
+    },
+    "Al_single_coarse_k_13": {
+      "description": "Al: single-proposal calculation, coarse_k_13",
+      "sha256": "4aa52c92ecb1726bcc0c8d849577580a68374dd7ce104c36d20c2914a7f28f79",
+      "bytes": 706
+    },
+    "material_summary": {
+      "description": "Previously computed separation statistics",
+      "sha256": "0f99e95796e582df90a35cb184c93b5ea1176c1688ce0ad9fa0e1a923015ecfb",
+      "bytes": 126288
+    },
+    "shell_exploratory": {
+      "description": "Silicon response-shell observations: exploratory configuration",
+      "sha256": "7147b245288631194f29a9aeaa3efed3941925cfb4b40c6fea94bddb5b7ad969",
+      "bytes": 231241
+    },
+    "shell_selection": {
+      "description": "Silicon response-shell observations: selection configuration",
+      "sha256": "3675b668ddbc15836533b504d80412db48f7d0365ecded90df7af8833b21f802",
+      "bytes": 45132
+    },
+    "shell_frozen": {
+      "description": "Silicon response-shell observations: frozen configuration",
+      "sha256": "caba00491c0bdf287b86f874dc27b88e701ec49709269ebbaecc4a4895a43596",
+      "bytes": 57792
+    },
+    "h2_trajectory": {
+      "description": "H2: fixed-grid subspace-reuse trajectory",
+      "sha256": "461326c09f8750c832f6561b099b2eda70da9e9c2dfad68251088e321a5dfe2b",
+      "bytes": 50219
+    }
+  }
+}
