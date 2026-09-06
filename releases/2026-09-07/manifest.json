@@ -25,33 +25,33 @@
     },
     {
       "file": "data/e0.csv",
-      "bytes": 657334,
-      "sha256": "e1cf95406cc57cc6002885e2345d9197336484c9144a1788d0266ed7dbe338b5"
+      "bytes": 647333,
+      "sha256": "7e2918285daca8e68ba0bc59808315edc74dd0c3e4aadbd67ea9ccfdc4bd474e"
     },
     {
       "file": "data/e3_al.csv",
-      "bytes": 132340,
-      "sha256": "27ecc7a4948ce2f02413e394524a4666b2fc6ee9d2180338ea546aee48b847c9"
+      "bytes": 130725,
+      "sha256": "fe43dd98246331b2168368fe559ffb37a25aa4f534bf8081464f993424b7acc1"
     },
     {
       "file": "data/e3_graphene.csv",
-      "bytes": 13165,
-      "sha256": "e2b12cacf7e7f7971a505b4d02970b938b22089f2e136ffd1efe42edb27904af"
+      "bytes": 13000,
+      "sha256": "7243ba7b36d25b239ebad2ded33bf11f6ecf58ec9ca39bc0342be36f1a7dc396"
     },
     {
       "file": "data/gk_al.csv",
-      "bytes": 33260,
-      "sha256": "b46eb01520e632f2470ffdb37ba285ddd05f67cc48547234dcb1d044dc96f3ba"
+      "bytes": 32859,
+      "sha256": "53f88e42354f04e5680749fa7150f9241665789e4ec01da3e76a1d14ad12b48e"
     },
     {
       "file": "data/gk_graphene.csv",
-      "bytes": 25846,
-      "sha256": "1f551ad0d6659553bbe5917c5cd7a4f625f991c598510244f7434db4d1b4177f"
+      "bytes": 25535,
+      "sha256": "443bade202fb89dd5fab4eb61b6d27b63ebe2ba7050e98aa287344433cddb074"
     },
     {
       "file": "data/screen_scope.csv",
-      "bytes": 1316,
-      "sha256": "d829cb2da03aafa85869d16f138fadd7b58116cc8e8a2e43207bddef2d0f5c01"
+      "bytes": 1305,
+      "sha256": "12b94c78dd99250ad64bb4a8d5e4f767674d30ab330a74a03ca52c61040ffb36"
     },
     {
       "file": "data/shells.csv",
