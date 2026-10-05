@@ -101,18 +101,19 @@ def main() -> int:
     findings: list[dict[str, object]] = []
     files_checked = 0
     patterns = text_patterns()
-    release_root = root / "releases" / "2026-09-07"
     allowed_csv = set()
-    if release_root.is_dir():
-        # Only sealed inputs named in the versioned manifest may be distributed.
+    releases = sorted(path for path in (root / "releases").glob("*") if (path / "manifest.json").is_file())
+    for release_root in releases:
+        # Only sealed inputs named in a versioned manifest may be distributed.
         completed = subprocess.run([sys.executable, str(release_root / "verify.py")],
                                    capture_output=True, text=True, check=False)
         if completed.returncode:
-            findings.append({"path": "releases/2026-09-07", "kind": "release identity verification failed"})
+            findings.append({"path": release_root.relative_to(root).as_posix(),
+                             "kind": "release identity verification failed"})
         else:
             release = json.loads((release_root / "manifest.json").read_text())
-            allowed_csv = {(release_root / entry["file"]).resolve()
-                           for entry in release["files"] if entry["file"].endswith(".csv")}
+            allowed_csv |= {(release_root / entry["file"]).resolve()
+                            for entry in release["files"] if entry["file"].endswith(".csv")}
 
     for path in repository_files(root):
         files_checked += 1

@@ -1,0 +1,252 @@
+{
+  "version": "2026-10-05",
+  "manuscript": "Gap-free finite-temperature error bounds and the subspace-coupling error of compressed Kohn-Sham states",
+  "figure_count": 7,
+  "supplemental_table_count": 4,
+  "data_level": "lightweight derived numerical records",
+  "DFT_calculation_regeneration": false,
+  "decomposition_regeneration_from_derived_inputs": false,
+  "wave_function_records_included": false,
+  "files": [
+    {
+      "file": "DATA_DICTIONARY.md",
+      "bytes": 5974,
+      "sha256": "ec3a1a2b94d8f43a791df0128c19e1630546babfcddbed95a994f9e590562fb5"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4192,
+      "sha256": "6d97628a7647d4af0a85eaf969f884039dfa864bbc046da02484d81e2d6b820b"
+    },
+    {
+      "file": "analysis/README.md",
+      "bytes": 1638,
+      "sha256": "bb968637bcc9437d9dfaddbfd8202bc8dd0d663ed19f6b1017ad9a58fbd9ebbb"
+    },
+    {
+      "file": "analysis/export_heatmap.py",
+      "bytes": 1870,
+      "sha256": "3012b4022af21666fd0a71949be4f08b0e82b45cc5b17e04cf20b25faa9c8053"
+    },
+    {
+      "file": "analysis/fullstate.py",
+      "bytes": 13917,
+      "sha256": "c20a8b6d413038a2ef376e2fc74ae9e175ee383f41b1089de4ff9489fb7872b4"
+    },
+    {
+      "file": "analysis/indicator_mu_check.py",
+      "bytes": 1863,
+      "sha256": "935c1c8658fd74c92ea6e50d148cd9e6ddec0a97f17d39490f8315c65698cc99"
+    },
+    {
+      "file": "analysis/inloop.py",
+      "bytes": 8111,
+      "sha256": "50dcb179e27bbf49a32478919363eaed29cc2e4090b54f4689339ff731842bfd"
+    },
+    {
+      "file": "analysis/inloop_ledger.py",
+      "bytes": 4301,
+      "sha256": "3b552b7349faab992b5366d9169b194aee328fec1a811e33c0d8c2e47f5072b1"
+    },
+    {
+      "file": "analysis/make_si_inloop_table.py",
+      "bytes": 3245,
+      "sha256": "9bb54c788f9db60fceb3fadfcc0c2130c3ac43d01d05592207bd216a034046fd"
+    },
+    {
+      "file": "analysis/make_si_tables.py",
+      "bytes": 2699,
+      "sha256": "e5dd11da5e66f2064edda2d38d276135fbd4fb4b4404a721cc0f010bd453b3d6"
+    },
+    {
+      "file": "analysis/run_all.py",
+      "bytes": 3468,
+      "sha256": "da0478282c8a988b3ec63dec9b200817de554730ae05487beb81b30486c9f54e"
+    },
+    {
+      "file": "analysis/stats_ledger.py",
+      "bytes": 5111,
+      "sha256": "d644fac93f9c9ffe06c41124d50cb92fe30786f6faba261624f6904a36e5ea4c"
+    },
+    {
+      "file": "analysis/verify_gr16.py",
+      "bytes": 1939,
+      "sha256": "09c216db994f12142db62163da9017d5d60f91a1187057fda77b6d18df8e0276"
+    },
+    {
+      "file": "analysis/verify_secondorder_blocks.py",
+      "bytes": 2729,
+      "sha256": "2b58f4fbe18b6b486ef61cf5ea35b8fb4dd82e4bbaa2563cabdb3e22290bcc32"
+    },
+    {
+      "file": "build.py",
+      "bytes": 2118,
+      "sha256": "fffb7c7d9034dcfa053bc177327696edfca9316587cc6a59400295a2f00888be"
+    },
+    {
+      "file": "data/blocks_al.json",
+      "bytes": 298871,
+      "sha256": "ecd3d790fff26c108d17d940a6f267c63ae14cbd2a777fcd9aa06a8306715108"
+    },
+    {
+      "file": "data/blocks_graphene.json",
+      "bytes": 493091,
+      "sha256": "88a0947813b0d1f7dc6672270f3b10a8541ac58a8694b5137a8a8c8f08765ff7"
+    },
+    {
+      "file": "data/blocks_si.json",
+      "bytes": 100152,
+      "sha256": "fa01a84ef269e374e0fad44fdab2fbe83a61693922f29c95cf97a5d42c5a600d"
+    },
+    {
+      "file": "data/decomposition_results.json",
+      "bytes": 433098,
+      "sha256": "bc82b35d1f53710a355227fb6252b3a40d62286356d95ec522b18be9fc4d54dd"
+    },
+    {
+      "file": "data/e0.csv",
+      "bytes": 647333,
+      "sha256": "7e2918285daca8e68ba0bc59808315edc74dd0c3e4aadbd67ea9ccfdc4bd474e"
+    },
+    {
+      "file": "data/e3_al.csv",
+      "bytes": 130725,
+      "sha256": "fe43dd98246331b2168368fe559ffb37a25aa4f534bf8081464f993424b7acc1"
+    },
+    {
+      "file": "data/e3_graphene.csv",
+      "bytes": 13000,
+      "sha256": "7243ba7b36d25b239ebad2ded33bf11f6ecf58ec9ca39bc0342be36f1a7dc396"
+    },
+    {
+      "file": "data/excluded_candidates.csv",
+      "bytes": 1063,
+      "sha256": "8144d6cf294b0a30accc35ab9d92898255056c4aede6fb8c2ecdab2efa092e34"
+    },
+    {
+      "file": "data/gk_al.csv",
+      "bytes": 32859,
+      "sha256": "53f88e42354f04e5680749fa7150f9241665789e4ec01da3e76a1d14ad12b48e"
+    },
+    {
+      "file": "data/gk_graphene.csv",
+      "bytes": 25535,
+      "sha256": "443bade202fb89dd5fab4eb61b6d27b63ebe2ba7050e98aa287344433cddb074"
+    },
+    {
+      "file": "data/inloop_ledger.json",
+      "bytes": 9323,
+      "sha256": "c59b2649b993d898360f59e10f3d169e558c788c694d04a3b8d38366c1174fab"
+    },
+    {
+      "file": "data/inloop_results.json",
+      "bytes": 116509,
+      "sha256": "1a540fe0c162307c7be47b321213f94e792eee2b6c6395926182303271c33eb2"
+    },
+    {
+      "file": "data/material_candidates.csv",
+      "bytes": 8286,
+      "sha256": "ae739a8b82dffb841d2af4f9e7fe1df6935111fbd5985df0d4ce0728087383f7"
+    },
+    {
+      "file": "data/rerun_provenance.json",
+      "bytes": 18231,
+      "sha256": "792ac90ad8bc135bf52764570bd9adc7f4773f2b0682d8463d8560f55de74382"
+    },
+    {
+      "file": "data/silicon_physics.json",
+      "bytes": 23892,
+      "sha256": "f7f927593bc9998d41ec824091b9634b51843cca035ac6f0e84374e2c942fc1d"
+    },
+    {
+      "file": "data/stats_ledger.json",
+      "bytes": 12419,
+      "sha256": "0df419f33603c56e1db15b8908e956b85832a97b2e26257435f2e28581d502a1"
+    },
+    {
+      "file": "data/supplement.json",
+      "bytes": 7380,
+      "sha256": "69abd6a8708819f14fde12adcd0b2aaa9a9247664e09e0e4b7e12242bc9fc433"
+    },
+    {
+      "file": "data/table2_decomposition.json",
+      "bytes": 1580,
+      "sha256": "a5d9101f5f973562b8e7e44b4af2405b4b61dbc9434f749b92f3ef70d8674027"
+    },
+    {
+      "file": "figures/fig1_blocks.py",
+      "bytes": 4912,
+      "sha256": "c6e5110e233ef12d1047b24e8dbbf366d2a67ffbc21cffd3e70777a6cded7a5a"
+    },
+    {
+      "file": "figures/fig2_inloop.py",
+      "bytes": 8920,
+      "sha256": "44f3162376ccb477146c781d44a14ee5cc6fb4c2331cadb03b6f63248e3c40b6"
+    },
+    {
+      "file": "figures/fig3_decomposition.py",
+      "bytes": 9212,
+      "sha256": "632591a147800e9dced3c215d1f7677d2e709a0bd5362dcb95ffaadceda7d486"
+    },
+    {
+      "file": "figures/figS1_blocks.py",
+      "bytes": 2455,
+      "sha256": "5fd615b62e7c58539a6f8bf3c97c64aba6d1a7872ac1ebd98a087a56cc3a10fa"
+    },
+    {
+      "file": "figures/figS2_silicon.py",
+      "bytes": 5684,
+      "sha256": "089a432ca1372b018129ad38b32f79d5598d2124e84e19cbdf21fbcebd8e30ce"
+    },
+    {
+      "file": "figures/figS3S4_auxiliary.py",
+      "bytes": 7470,
+      "sha256": "9ee993c8aead9cde0b3fc019d3f2896d9be33aad5c87080ddc208307eae3dd8e"
+    },
+    {
+      "file": "figures/prb_style.py",
+      "bytes": 10465,
+      "sha256": "250d04683355f708e9eb68d83fa7ad8159fad549b55e69e9fb6b421921127985"
+    },
+    {
+      "file": "requirements.txt",
+      "bytes": 28,
+      "sha256": "ce02e86bc8655a405c8d0524bbb4dfc09000806d6604a430fd59e50a4c4fa2b6"
+    },
+    {
+      "file": "tables/expected/tabS_inloop_rows.tex",
+      "bytes": 6539,
+      "sha256": "fe00fe589177e6c5b6408fe1f3fa47110bad895307c33d33defda427fe874b7a"
+    },
+    {
+      "file": "tables/expected/tabS_inloop_summary_rows.tex",
+      "bytes": 393,
+      "sha256": "bf433af9baac3c415ef18e24d8ed804372d4fc462d86689776dad93f8828386e"
+    },
+    {
+      "file": "tables/expected/tabS_sweep_rows.tex",
+      "bytes": 2967,
+      "sha256": "b6eae41cbb35f06c1b86fb86d30d269b5a2af5504ae1b96d26a71ed9b6982b1b"
+    },
+    {
+      "file": "tables/expected/tabS_tau_rows.tex",
+      "bytes": 2681,
+      "sha256": "8ba0f5835452f3d88e0152c1d65c292b827cab21387d3e85280bf33bd6cb0f95"
+    },
+    {
+      "file": "tables/make_tables.py",
+      "bytes": 6264,
+      "sha256": "a21ee37373e0a8df7d6aa671608abe958c57e65b1cbed9590720ae9d65de6479"
+    },
+    {
+      "file": "tests/test_numbers.py",
+      "bytes": 7145,
+      "sha256": "71b1e8da4a4ec23f5ffc98dd3d9928655613aad64068fbd23559b7b280b07f7c"
+    },
+    {
+      "file": "verify.py",
+      "bytes": 1306,
+      "sha256": "0b18210ddba912762ab4426634fcb1966c700a0ba16c4725c904f1d7e57e41e3"
+    }
+  ]
+}

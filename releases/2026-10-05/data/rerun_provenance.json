@@ -1,0 +1,778 @@
+{
+ "schema": "idmate_inloop_rerun_provenance/v1",
+ "date": "2026-10-05",
+ "purpose": "Rerun of the 51 in-loop SCF tests of the manuscript with a test-only hook that stores, for every candidate presented to the window screen, the screen Hamiltonian, the candidate orbitals and occupations, and the exact reference frame (manuscript Sec. IV D, Supplemental Material Sec. S6).",
+ "code": {
+  "idmate_commit": "559dfc1",
+  "hook": "one function and one call in the reference-scoring arm of the controller test harness (a module compiled only into test builds); active only when IDMATE_HDUMP_DIR is set; reads its arguments without modifying them; writes after the timed reference-distance evaluation; no solver code changed",
+  "hook_patch_sha256": "ba66ae5a2ca9f1fad4acdc3f444ad77de77e820781b575a712ed52d56cde43d8",
+  "patched_source_archive_sha256": "d554e1aaf41231b5cf246f99cffe90d8a7edb1a8dca3b4fd81b2a3e22510e6ca",
+  "toolchain": "Rust 1.96.0, release profile, offline build with locked dependencies",
+  "test_binary_sha256": "7f18ff950a7d6f7269d74354fbbc93655e7c3d33fad2673a70a018766044621b",
+  "test_suite": {
+   "non_ignored_tests": 422,
+   "passed": 421,
+   "failed": "pseudo_scf::tests::davidson_scf_warm_start_off_matches_pre_change_record_bitwise",
+   "failure_reason": "compares a Davidson SCF free energy bit for bit with a value recorded on the arm64 development host; differs by nine units in the last place (4e-15 Ha) on x86-64; does not involve the controller harness"
+  }
+ },
+ "hosts": {
+  "A": "x86-64 cluster, Intel Xeon E5-2680 v4 node: 16 Si single-insertion runs and the three multiple-insertion reference configurations",
+  "B": "x86-64 cluster, AMD EPYC 7H12 node: 32 graphene and Al single-insertion runs (same test binary, checksum verified)",
+  "original": "the single-insertion runs originally ran on the same two clusters and CPU types; the reference configurations originally ran on an Apple M3 Max (arm64)"
+ },
+ "runs": [
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 2,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 969.0,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 5,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 980.8,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 8,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 1002.4,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 11,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 1034.9,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 14,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 1067.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 17,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 1100.8,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 3,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 966.2,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 6,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 965.8,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 9,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 965.0,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 12,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 965.0,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 15,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 964.9,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 18,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 964.9,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 4,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 955.2,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 7,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 955.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 10,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 955.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 13,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 955.5,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 2,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 499.4,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 5,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 500.6,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 8,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 501.4,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 11,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 501.7,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 14,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 501.3,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 17,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 505.3,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 3,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 498.5,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 6,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 501.0,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 9,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 498.3,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 12,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 497.9,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 15,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 498.4,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 18,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 497.8,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 4,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 498.3,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 7,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 498.6,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 10,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 497.8,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 13,
+   "cluster": "B",
+   "cpu": "AMD EPYC 7H12",
+   "threads": 1,
+   "wall_s": 498.4,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 2,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 485.5,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 5,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 485.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 8,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 490.5,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 11,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 500.3,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 14,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 515.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "low_cutoff",
+   "iteration": 17,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 530.5,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 3,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 484.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 6,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 484.7,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 9,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 484.7,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 12,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 484.7,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 15,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 485.1,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "oracle_subspace",
+   "iteration": 18,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 484.6,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 4,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 483.3,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 7,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 483.3,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 10,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 483.4,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "single",
+   "family": "coarse_k",
+   "iteration": 13,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 483.3,
+   "exit_code": 0
+  },
+  {
+   "material": "Al",
+   "insertion": "multiple",
+   "family": null,
+   "iteration": null,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 4645.8,
+   "exit_code": 0
+  },
+  {
+   "material": "graphene",
+   "insertion": "multiple",
+   "family": null,
+   "iteration": null,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 2258.4,
+   "exit_code": 0
+  },
+  {
+   "material": "Si",
+   "insertion": "multiple",
+   "family": null,
+   "iteration": null,
+   "cluster": "A",
+   "cpu": "Intel Xeon E5-2680 v4",
+   "threads": 1,
+   "wall_s": 497.2,
+   "exit_code": 0
+  }
+ ],
+ "comparison_with_original": {
+  "compared": "every proposal-record field except timings, the mixed-density fingerprint at every SCF iteration, and the terminal state",
+  "single_insertion": {
+   "runs": 48,
+   "arms_compared": 96,
+   "arm_names": [
+    "observation_only",
+    "reference_scoring"
+   ],
+   "arms_bitwise_identical": 96,
+   "decisions_equal": 96
+  },
+  "reference_configurations": [
+   {
+    "material": "Si",
+    "original_host": "Apple M3 Max (arm64)",
+    "rerun_cpu": "Intel Xeon E5-2680 v4",
+    "arms_identical_within_rerun": true,
+    "reference_scoring": {
+     "decisions_equal": true,
+     "kinds_equal": true,
+     "iterations": {
+      "rerun": 45,
+      "original": 45
+     },
+     "converged": {
+      "rerun": true,
+      "original": true
+     },
+     "density_trajectory_bitwise": false,
+     "first_differing_iteration": 1,
+     "max_relative_difference": {
+      "full_state_distance": 5.785034549176115e-15,
+      "window_bound": 1.8410481496450185e-05,
+      "window_distance": 3.33766433174304e-05,
+      "global_trace_deviation": 7.315155172729102e-05
+     },
+     "free_energy_ha": {
+      "rerun": -7.8011374348735165,
+      "original": -7.801137434873521,
+      "abs_difference": 4.440892098500626e-15
+     }
+    },
+    "integrated": {
+     "decisions_equal": true,
+     "kinds_equal": true,
+     "iterations": {
+      "rerun": 45,
+      "original": 45
+     },
+     "converged": {
+      "rerun": true,
+      "original": true
+     },
+     "density_trajectory_bitwise": false,
+     "first_differing_iteration": 1,
+     "max_relative_difference": {
+      "full_state_distance": 3.9021023994767616e-15,
+      "window_bound": 1.8410481496450185e-05,
+      "window_distance": 3.33766433174304e-05,
+      "global_trace_deviation": 7.315155172729102e-05
+     },
+     "free_energy_ha": {
+      "rerun": -7.8011374348735165,
+      "original": -7.801137434873521,
+      "abs_difference": 4.440892098500626e-15
+     }
+    }
+   },
+   {
+    "material": "graphene",
+    "original_host": "Apple M3 Max (arm64)",
+    "rerun_cpu": "Intel Xeon E5-2680 v4",
+    "arms_identical_within_rerun": true,
+    "reference_scoring": {
+     "decisions_equal": true,
+     "kinds_equal": true,
+     "iterations": {
+      "rerun": 69,
+      "original": 69
+     },
+     "converged": {
+      "rerun": true,
+      "original": true
+     },
+     "density_trajectory_bitwise": false,
+     "first_differing_iteration": 1,
+     "max_relative_difference": {
+      "full_state_distance": 1.062425857941525e-13,
+      "window_bound": 0.13779239499196128,
+      "window_distance": 0.015547875195723166,
+      "global_trace_deviation": 0.15625
+     },
+     "free_energy_ha": {
+      "rerun": -10.144003509673011,
+      "original": -10.144003509673015,
+      "abs_difference": 3.552713678800501e-15
+     }
+    },
+    "integrated": {
+     "decisions_equal": true,
+     "kinds_equal": true,
+     "iterations": {
+      "rerun": 69,
+      "original": 69
+     },
+     "converged": {
+      "rerun": true,
+      "original": true
+     },
+     "density_trajectory_bitwise": false,
+     "first_differing_iteration": 1,
+     "max_relative_difference": {
+      "full_state_distance": 7.95130787652308e-14,
+      "window_bound": 0.13779239499196128,
+      "window_distance": 0.015547875195723166,
+      "global_trace_deviation": 0.15625
+     },
+     "free_energy_ha": {
+      "rerun": -10.144003509673011,
+      "original": -10.144003509673015,
+      "abs_difference": 3.552713678800501e-15
+     }
+    }
+   },
+   {
+    "material": "Al",
+    "original_host": "Apple M3 Max (arm64)",
+    "rerun_cpu": "Intel Xeon E5-2680 v4",
+    "arms_identical_within_rerun": true,
+    "reference_scoring": {
+     "decisions_equal": true,
+     "kinds_equal": true,
+     "iterations": {
+      "rerun": 44,
+      "original": 44
+     },
+     "converged": {
+      "rerun": true,
+      "original": true
+     },
+     "density_trajectory_bitwise": false,
+     "first_differing_iteration": 1,
+     "max_relative_difference": {
+      "full_state_distance": 1.730622328267923e-11,
+      "window_bound": 0.0011122139960300162,
+      "window_distance": 0.004303723952319352,
+      "global_trace_deviation": 2.989104713319949e-06
+     },
+     "free_energy_ha": {
+      "rerun": -8.310104500336307,
+      "original": -8.310104500336303,
+      "abs_difference": 3.552713678800501e-15
+     }
+    },
+    "integrated": {
+     "decisions_equal": true,
+     "kinds_equal": true,
+     "iterations": {
+      "rerun": 44,
+      "original": 44
+     },
+     "converged": {
+      "rerun": true,
+      "original": true
+     },
+     "density_trajectory_bitwise": false,
+     "first_differing_iteration": 1,
+     "max_relative_difference": {
+      "full_state_distance": 1.2239185943581507e-08,
+      "window_bound": 0.0011122139960300162,
+      "window_distance": 0.004303723952319352,
+      "global_trace_deviation": 2.989104713319949e-06
+     },
+     "free_energy_ha": {
+      "rerun": -8.310104500336307,
+      "original": -8.310104500336303,
+      "abs_difference": 3.552713678800501e-15
+     }
+    }
+   }
+  ]
+ },
+ "stored_records": {
+  "candidates": 66,
+  "matrices": 2904,
+  "matrix_bytes_compressed": 254479364,
+  "total_bytes": 272824732,
+  "format": "per candidate: meta.json (screen and reference outputs, tau, electron count, chemical potentials, k-point weights, Miller indices, eigenvalues and occupations) and, per k point, H, candidate orbitals and exact eigenvectors as little-endian complex128 arrays in column-major order (xz-compressed)",
+  "availability": "wave-function-level data; available from the authors on request"
+ }
+}

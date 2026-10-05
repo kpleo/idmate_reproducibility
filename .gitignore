@@ -47,3 +47,4 @@ outputs/tables/*
 # Versioned lightweight derived numerical inputs.
 !releases/2026-09-07/data/*.csv
 !releases/2026-09-07/numerical_clarifications/*.csv
+!releases/2026-10-05/data/*.csv
