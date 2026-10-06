@@ -5,12 +5,12 @@ Repository name: `idmate_reproducibility`.
 ## Current release: 2026-10-05
 
 The [2026-10-05 release](releases/2026-10-05/README.md) accompanies the revised
-manuscript "Gap-free finite-temperature error bounds and the subspace-coupling
-error of compressed Kohn-Sham states". It reconstructs the three main figures,
-the four supplemental figures and the supplemental tables from compact derived
-inputs, recomputes the numbers quoted in the text, and documents the 2026-10-05
-rerun of the SCF tests with saved Hamiltonians (per-candidate decomposition
-results, provenance and the bitwise comparison with the original records).
+manuscript "Gap-free error bounds for compressed Kohn-Sham states at finite
+temperature". It reconstructs the three main figures, the four supplemental
+figures and the supplemental tables from compact derived inputs, recomputes the
+numbers quoted in the text, and documents the 2026-10-05 rerun of the SCF tests
+with saved Hamiltonians (per-candidate decomposition results, provenance and
+the bitwise comparison with the original records).
 
 ```sh
 python3 releases/2026-10-05/build.py

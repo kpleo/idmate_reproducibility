@@ -1,9 +1,9 @@
 # IDMate figures, tables and numerical checks, release 2026-10-05
 
-This release accompanies the revised manuscript "Gap-free finite-temperature error bounds and the
-subspace-coupling error of compressed Kohn-Sham states". It reconstructs the three main figures, the four
-Supplemental figures and the Supplemental tables of the decomposition and of the in-loop rerun from compact
-derived records, and it recomputes the numbers quoted in the text. The manuscript itself is not included.
+This release accompanies the revised manuscript "Gap-free error bounds for compressed Kohn-Sham states at
+finite temperature". It reconstructs the three main figures, the four Supplemental figures and the
+Supplemental tables of the decomposition and of the in-loop rerun from compact derived records, and it
+recomputes the numbers quoted in the text. The manuscript itself is not included.
 
 ## Run
 

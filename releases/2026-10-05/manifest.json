@@ -1,6 +1,6 @@
 {
   "version": "2026-10-05",
-  "manuscript": "Gap-free finite-temperature error bounds and the subspace-coupling error of compressed Kohn-Sham states",
+  "manuscript": "Gap-free error bounds for compressed Kohn-Sham states at finite temperature",
   "figure_count": 7,
   "supplemental_table_count": 4,
   "data_level": "lightweight derived numerical records",
@@ -15,8 +15,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 4192,
-      "sha256": "6d97628a7647d4af0a85eaf969f884039dfa864bbc046da02484d81e2d6b820b"
+      "bytes": 4164,
+      "sha256": "12a402731dbf70c52380b086bfa01385d5ea7e3d040ea7fab3fb1caf94e5e141"
     },
     {
       "file": "analysis/README.md",
@@ -151,7 +151,7 @@
     {
       "file": "data/rerun_provenance.json",
       "bytes": 18231,
-      "sha256": "792ac90ad8bc135bf52764570bd9adc7f4773f2b0682d8463d8560f55de74382"
+      "sha256": "53f151f13e41b379e21dbc55f9e47de63db6a53a0d388a40eeab598468d8a514"
     },
     {
       "file": "data/silicon_physics.json",
@@ -175,8 +175,8 @@
     },
     {
       "file": "figures/fig1_blocks.py",
-      "bytes": 4912,
-      "sha256": "c6e5110e233ef12d1047b24e8dbbf366d2a67ffbc21cffd3e70777a6cded7a5a"
+      "bytes": 4935,
+      "sha256": "5ecb1e3e873860ae08f2bde1801e0b4413164a1190369ed1c17153d6fab7ccf8"
     },
     {
       "file": "figures/fig2_inloop.py",
@@ -186,7 +186,7 @@
     {
       "file": "figures/fig3_decomposition.py",
       "bytes": 9212,
-      "sha256": "632591a147800e9dced3c215d1f7677d2e709a0bd5362dcb95ffaadceda7d486"
+      "sha256": "d5f75ca2c3d67f5a1f661112a048833fa33ac097b6950f5aee9bf999bd4a3438"
     },
     {
       "file": "figures/figS1_blocks.py",
@@ -241,7 +241,7 @@
     {
       "file": "tests/test_numbers.py",
       "bytes": 7145,
-      "sha256": "71b1e8da4a4ec23f5ffc98dd3d9928655613aad64068fbd23559b7b280b07f7c"
+      "sha256": "966d6db24dba1ae57a5e9a7a6a375c9f7386bd031c0d1dbe36dfa69e34d6c251"
     },
     {
       "file": "verify.py",

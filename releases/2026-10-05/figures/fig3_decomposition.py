@@ -85,7 +85,7 @@ g = {r['extra']: r for r in res['graphene']['extra_sweep']}[16]
 top[1].annotate('', xy=(16, g['d_full'] * 1.25), xytext=(30, 0.9),
                 arrowprops=dict(arrowstyle='-', lw=0.6, color=S.INK2, shrinkA=0.5, shrinkB=1.5))
 S.ann(top[1], 31, 0.9, f"$b=16$: first order {100 * abs(g['pyth'] - g['d_full']) / g['d_full']:.0f}% low,\n"
-      f"second order {100 * abs(g['pyth2'] - g['d_full']) / g['d_full']:.1f}%", ha='left', va='center', color=S.INK)
+      f"second order {100 * abs(g['pyth2'] - g['d_full']) / g['d_full']:.2f}%", ha='left', va='center', color=S.INK)
 
 # ---------------------------------------------------------------- (d) coupling share versus temperature
 for key, mat in MATS:
@@ -118,7 +118,7 @@ S.ann(axe, 0.03, 0.04, 'Underestimate', transform=axe.transAxes, ha='left', va='
 allr = [r for k, _ in MATS for r in distinct(k)]
 ii = np.array([r['indicator'] / r['d_full'] for r in allr]); cold = np.array([r['tau'] <= HOT for r in allr])
 bb = np.array([r['d_full'] / r['rigorous'] for r in allr])
-S.callout(axe, 0.03, 0.97, f"{cold.sum()} cases, $\\tau\\leq0.054$ Ha:\nratio {ii[cold].min():.2f}–{ii[cold].max():.1f}, "
+S.callout(axe, 0.03, 0.97, f"{cold.sum()} cases, $\\tau\\leq0.054$ Ha:\nratio {ii[cold].min():.3f}–{ii[cold].max():.1f}, "
           f"median {np.median(ii[cold]):.2f}", transform=axe.transAxes, ha='left', va='top', fontsize=S.FA)
 he = [Line2D([], [], ls='', marker='o', mfc='none', mec=S.INK2, ms=3.2, mew=0.8, label=r'$\tau\leq0.054$ Ha'),
       Line2D([], [], ls='', marker='o', mfc=S.INK2, mec='white', mew=0.35, ms=3.6, label=r'$\tau\geq0.075$ Ha')]

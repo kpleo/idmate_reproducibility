@@ -1,7 +1,7 @@
 {
  "schema": "idmate_inloop_rerun_provenance/v1",
  "date": "2026-10-05",
- "purpose": "Rerun of the 51 in-loop SCF tests of the manuscript with a test-only hook that stores, for every candidate presented to the window screen, the screen Hamiltonian, the candidate orbitals and occupations, and the exact reference frame (manuscript Sec. IV D, Supplemental Material Sec. S6).",
+ "purpose": "Rerun of the 51 in-loop SCF tests of the manuscript with a test-only hook that stores, for every candidate presented to the window screen, the screen Hamiltonian, the candidate orbitals and occupations, and the exact reference frame (manuscript Sec. IV D, Supplemental Material Sec. S7).",
  "code": {
   "idmate_commit": "559dfc1",
   "hook": "one function and one call in the reference-scoring arm of the controller test harness (a module compiled only into test builds); active only when IDMATE_HDUMP_DIR is set; reads its arguments without modifying them; writes after the timed reference-distance evaluation; no solver code changed",

@@ -99,7 +99,7 @@ class InLoopRerun(unittest.TestCase):
 
 
 class RerunReproduction(unittest.TestCase):
-    """Sec. IV D and Supplemental Sec. S6: the rerun compared with the original records."""
+    """Sec. IV D and Supplemental Sec. S7: the rerun compared with the original records."""
 
     @classmethod
     def setUpClass(cls):
